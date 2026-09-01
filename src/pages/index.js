@@ -109,17 +109,17 @@ function LogoCarousel() {
 const productJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Product',
-  '@id': 'https://auto-intern-skainet.github.io/edge-compute-documentation/#product',
+  '@id': 'https://edge-compute.skainet.io/#product',
   name: 'skAInet Edge-Compute',
   alternateName: 'Edge-Compute v1.5',
   description:
     'Programmable M12-PoE switch, router, and compute module for industrial edge applications. Rugged anodized aluminum enclosure, sealed M12 connectors, operation under water up to 1 bar, 7 PoE LAN ports plus WAN, 8-core ARM CPU, 8 GB RAM, 32 GB eMMC, Yocto Linux with documented SBOM.',
   image: [
-    'https://auto-intern-skainet.github.io/edge-compute-documentation/img/edge-in-use-2.jpg',
-    'https://auto-intern-skainet.github.io/edge-compute-documentation/img/edge-branded.jpg',
-    'https://auto-intern-skainet.github.io/edge-compute-documentation/img/edge-in-use-1.jpg',
+    'https://edge-compute.skainet.io/img/edge-in-use-2.jpg',
+    'https://edge-compute.skainet.io/img/edge-branded.jpg',
+    'https://edge-compute.skainet.io/img/edge-in-use-1.jpg',
   ],
-  url: 'https://auto-intern-skainet.github.io/edge-compute-documentation/',
+  url: 'https://edge-compute.skainet.io/',
   brand: {'@id': 'https://www.skainet.io/#brand'},
   manufacturer: {'@id': 'https://www.auto-intern.de/#organization'},
   category: 'Industrial edge computing / IIoT gateway',

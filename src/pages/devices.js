@@ -109,14 +109,14 @@ const devicesJsonLd = {
     position: i + 1,
     item: {
       '@type': 'Product',
-      '@id': `https://auto-intern-skainet.github.io/edge-compute-documentation/devices#${d.id}`,
+      '@id': `https://edge-compute.skainet.io/devices#${d.id}`,
       name: d.name,
       category: d.category,
       description: d.text,
       brand: {'@id': 'https://www.skainet.io/#brand'},
       manufacturer: {'@id': 'https://www.auto-intern.de/#organization'},
       isAccessoryOrSparePartFor: {
-        '@id': 'https://auto-intern-skainet.github.io/edge-compute-documentation/#product',
+        '@id': 'https://edge-compute.skainet.io/#product',
       },
     },
   })),

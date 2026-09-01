@@ -3,7 +3,7 @@ import Layout from '@theme/Layout';
 import Head from '@docusaurus/Head';
 import {publications} from '../data/publications';
 
-const SITE = 'https://auto-intern-skainet.github.io/edge-compute-documentation';
+const SITE = 'https://edge-compute.skainet.io';
 const ORG = 'https://www.auto-intern.de/#organization';
 const RUB = {
   '@type': 'CollegeOrUniversity',

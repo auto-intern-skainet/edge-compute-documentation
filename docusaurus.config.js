@@ -7,8 +7,8 @@ const config = {
     'Programmable M12-PoE switch, router, and compute module for industrial edge applications.',
   favicon: 'img/favicon.png',
 
-  url: 'https://auto-intern-skainet.github.io',
-  baseUrl: '/edge-compute-documentation/',
+  url: 'https://edge-compute.skainet.io',
+  baseUrl: '/',
 
   organizationName: 'auto-intern-skainet',
   projectName: 'edge-compute-documentation',
@@ -17,7 +17,7 @@ const config = {
   headTags: [
     {
       tagName: 'link',
-      attributes: {rel: 'llms-txt', type: 'text/plain', href: '/edge-compute-documentation/llms.txt'},
+      attributes: {rel: 'llms-txt', type: 'text/plain', href: '/llms.txt'},
     },
     {
       tagName: 'script',
@@ -31,7 +31,7 @@ const config = {
             name: 'Auto-Intern GmbH',
             url: 'https://www.auto-intern.de',
             email: 'info@auto-intern.de',
-            logo: 'https://auto-intern-skainet.github.io/edge-compute-documentation/img/skainet-logo-weiss.png',
+            logo: 'https://edge-compute.skainet.io/img/skainet-logo-weiss.png',
             address: {'@type': 'PostalAddress', addressCountry: 'DE'},
             sameAs: ['https://www.skainet.io', 'https://github.com/auto-intern-skainet'],
           },
@@ -40,13 +40,13 @@ const config = {
             '@id': 'https://www.skainet.io/#brand',
             name: 'skAInet',
             url: 'https://www.skainet.io',
-            logo: 'https://auto-intern-skainet.github.io/edge-compute-documentation/img/skainet-logo-weiss.png',
+            logo: 'https://edge-compute.skainet.io/img/skainet-logo-weiss.png',
           },
           {
             '@type': 'WebSite',
-            '@id': 'https://auto-intern-skainet.github.io/edge-compute-documentation/#website',
+            '@id': 'https://edge-compute.skainet.io/#website',
             name: 'skAInet Edge-Compute',
-            url: 'https://auto-intern-skainet.github.io/edge-compute-documentation/',
+            url: 'https://edge-compute.skainet.io/',
             publisher: {'@id': 'https://www.auto-intern.de/#organization'},
             inLanguage: 'en',
           },

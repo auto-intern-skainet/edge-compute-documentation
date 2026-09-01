@@ -9,7 +9,7 @@ const fs = require('fs');
 const path = require('path');
 
 const BUILD = path.join(__dirname, '..', 'build');
-const SITE = 'https://auto-intern-skainet.github.io/edge-compute-documentation';
+const SITE = 'https://edge-compute.skainet.io';
 
 function walk(dir) {
   return fs.readdirSync(dir, {withFileTypes: true}).flatMap((e) => {
