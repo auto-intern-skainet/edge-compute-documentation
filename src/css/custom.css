@@ -316,3 +316,93 @@
     display: none;
   }
 }
+
+/* Hero links */
+.heroCompanyLink {
+  color: #ffffff;
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.5);
+}
+.heroCompanyLink:hover {
+  color: #42abff;
+}
+
+/* Applications page */
+.pageHero {
+  background: linear-gradient(160deg, #262626 0%, #32373c 60%, #0d3a5c 100%);
+  color: #ffffff;
+  padding: 3.5rem 1rem;
+  text-align: center;
+}
+.pageHero h1 {
+  font-weight: 800;
+  font-size: 2.6rem;
+}
+.pageHeroLead {
+  max-width: 720px;
+  margin: 0 auto;
+  font-size: 1.15rem;
+  color: #d9d9d9;
+}
+.useCaseList {
+  padding: 2rem 1rem 1rem;
+}
+.useCase {
+  padding: 2.5rem 0;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+.useCase:last-child {
+  border-bottom: none;
+}
+.useCase--reversed {
+  flex-direction: row-reverse;
+}
+.useCaseSector {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ifm-color-primary);
+  margin-bottom: 0.5rem;
+}
+.useCaseBullets {
+  padding-left: 1.2rem;
+}
+.useCaseBullets li {
+  margin-bottom: 0.3rem;
+}
+.useCaseAside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+}
+.useCaseImage {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+.useCaseLogos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+.logoCard--small {
+  width: 180px;
+  height: 84px;
+}
+.logoCard--small img {
+  filter: none;
+  opacity: 1;
+  height: 48px;
+}
+@media screen and (max-width: 996px) {
+  .useCase--reversed {
+    flex-direction: row;
+  }
+  .useCaseAside {
+    margin-top: 1.5rem;
+  }
+}

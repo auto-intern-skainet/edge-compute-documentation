@@ -61,6 +61,7 @@ const config = {
             position: 'left',
             label: 'Documentation',
           },
+          {to: '/applications', label: 'Applications', position: 'left'},
           {
             href: 'https://www.skainet.io',
             label: 'skainet.io',
@@ -79,6 +80,7 @@ const config = {
           {
             title: 'Documentation',
             items: [
+              {label: 'Applications', to: '/applications'},
               {label: 'Getting Started', to: '/docs/getting-started'},
               {label: 'Technical Specifications', to: '/docs/specifications'},
               {label: 'Recovery & Maintenance', to: '/docs/recovery'},

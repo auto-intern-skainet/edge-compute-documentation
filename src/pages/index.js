@@ -85,7 +85,8 @@ function LogoCarousel() {
         </h2>
         <p className="text--center customerSubtitle">
           Companies, research institutions, and partners already running
-          skAInet Edge-Compute technology
+          skAInet Edge-Compute technology —{' '}
+          <Link to="/applications">see the applications</Link>
         </p>
       </div>
       <div className="logoMarquee" aria-label="Customer logos">
@@ -112,15 +113,21 @@ export default function Home() {
         <div className="container">
           <div className="row row--align-center">
             <div className="col col--6 heroText">
-              <img
-                className="heroLogo"
-                src={useBaseUrl('/img/skainet-logo-weiss.png')}
-                alt="skAInet"
-              />
+              <a href="https://www.skainet.io" title="skainet.io">
+                <img
+                  className="heroLogo"
+                  src={useBaseUrl('/img/skainet-logo-weiss.png')}
+                  alt="skAInet"
+                />
+              </a>
               <h1>Edge-Compute</h1>
               <p className="heroTagline">
                 The programmable M12-PoE switch, router, and compute module for
-                industrial edge applications — by Auto-Intern GmbH, Germany.
+                industrial edge applications — by{' '}
+                <a className="heroCompanyLink" href="https://www.auto-intern.de">
+                  Auto-Intern GmbH
+                </a>
+                , Germany.
               </p>
               <div className="heroButtons">
                 <Link className="button button--primary button--lg" to="/docs/getting-started">
