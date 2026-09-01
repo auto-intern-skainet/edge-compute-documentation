@@ -1,0 +1,131 @@
+/**
+ * skAInet brand styling, matched to skainet.io:
+ * accent blue #0089F7, dark grey #262626, font "Biryani".
+ */
+@import url('https://fonts.googleapis.com/css2?family=Biryani:wght@400;600;700;800&display=swap');
+
+:root {
+  --ifm-color-primary: #0089f7;
+  --ifm-color-primary-dark: #007bde;
+  --ifm-color-primary-darker: #0074d2;
+  --ifm-color-primary-darkest: #0060ad;
+  --ifm-color-primary-light: #1094ff;
+  --ifm-color-primary-lighter: #1d9aff;
+  --ifm-color-primary-lightest: #42abff;
+  --ifm-font-family-base: 'Biryani', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue',
+    sans-serif;
+  --ifm-navbar-background-color: #262626;
+  --ifm-navbar-link-color: #ffffff;
+  --ifm-navbar-link-hover-color: #42abff;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 137, 247, 0.1);
+  --skainet-dark: #262626;
+  --skainet-dark-2: #32373c;
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #42abff;
+  --ifm-color-primary-dark: #1d9aff;
+  --ifm-color-primary-darker: #1094ff;
+  --ifm-color-primary-darkest: #0079db;
+  --ifm-color-primary-light: #67bcff;
+  --ifm-color-primary-lighter: #79c4ff;
+  --ifm-color-primary-lightest: #b0dcff;
+  --ifm-background-color: #1d1f21;
+  --docusaurus-highlighted-code-line-bg: rgba(66, 171, 255, 0.15);
+}
+
+/* Dark navbar in both color modes — matches the skainet.io header */
+.navbar {
+  --ifm-navbar-link-color: #ffffff;
+}
+.navbar__title {
+  color: #ffffff;
+  font-weight: 800;
+}
+.navbar__toggle,
+.navbar .clean-btn {
+  color: #ffffff;
+}
+
+.footer--dark {
+  --ifm-footer-background-color: var(--skainet-dark);
+}
+
+/* Hero */
+.heroBanner {
+  background: linear-gradient(160deg, #262626 0%, #32373c 60%, #0d3a5c 100%);
+  color: #ffffff;
+  padding: 5rem 1rem;
+  text-align: center;
+}
+.heroBanner h1 {
+  font-weight: 800;
+  font-size: 3rem;
+}
+.heroLogo {
+  max-width: 260px;
+  margin-bottom: 1.5rem;
+}
+.heroTagline {
+  font-size: 1.3rem;
+  max-width: 720px;
+  margin: 0 auto 2rem;
+  color: #d9d9d9;
+}
+.heroButtons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Feature tiles */
+.featureSection {
+  padding: 4rem 1rem;
+}
+.featureCard {
+  height: 100%;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.featureCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 137, 247, 0.15);
+}
+.featureCard h3 {
+  color: var(--ifm-color-primary);
+}
+.featureIcon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Spec strip */
+.specStrip {
+  background: var(--skainet-dark);
+  color: #ffffff;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+.specStrip .specValue {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #42abff;
+  display: block;
+}
+.specStrip .specLabel {
+  color: #d9d9d9;
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 3rem 1rem;
+  }
+  .heroBanner h1 {
+    font-size: 2.2rem;
+  }
+}
