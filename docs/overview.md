@@ -7,6 +7,8 @@ title: Overview
 
 **by Auto-Intern GmbH, Germany**
 
+![skAInet Edge-Compute with M12 cables connected](/img/edge-in-use-2.jpg)
+
 The **skAInet Edge-Compute** is a programmable M12-PoE switch, router, and
 compute module for industrial edge applications — a rugged compute node built
 into an anodized aluminum enclosure.

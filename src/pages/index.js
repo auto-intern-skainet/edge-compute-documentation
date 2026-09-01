@@ -51,23 +51,34 @@ export default function Home() {
     <Layout description={siteConfig.tagline}>
       <header className="heroBanner">
         <div className="container">
-          <img
-            className="heroLogo"
-            src={useBaseUrl('/img/skainet-logo-weiss.png')}
-            alt="skAInet"
-          />
-          <h1>Edge-Compute</h1>
-          <p className="heroTagline">
-            The programmable M12-PoE switch, router, and compute module for
-            industrial edge applications — by Auto-Intern GmbH, Germany.
-          </p>
-          <div className="heroButtons">
-            <Link className="button button--primary button--lg" to="/docs/getting-started">
-              Get Started
-            </Link>
-            <Link className="button button--secondary button--outline button--lg" to="/docs/specifications">
-              Technical Specifications
-            </Link>
+          <div className="row row--align-center">
+            <div className="col col--6 heroText">
+              <img
+                className="heroLogo"
+                src={useBaseUrl('/img/skainet-logo-weiss.png')}
+                alt="skAInet"
+              />
+              <h1>Edge-Compute</h1>
+              <p className="heroTagline">
+                The programmable M12-PoE switch, router, and compute module for
+                industrial edge applications — by Auto-Intern GmbH, Germany.
+              </p>
+              <div className="heroButtons">
+                <Link className="button button--primary button--lg" to="/docs/getting-started">
+                  Get Started
+                </Link>
+                <Link className="button button--secondary button--outline button--lg" to="/docs/specifications">
+                  Technical Specifications
+                </Link>
+              </div>
+            </div>
+            <div className="col col--6">
+              <img
+                className="heroImage"
+                src={useBaseUrl('/img/edge-in-use-2.jpg')}
+                alt="skAInet Edge-Compute with M12 Ethernet cables connected"
+              />
+            </div>
           </div>
         </div>
       </header>
@@ -98,6 +109,45 @@ export default function Home() {
                   </div>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="gallerySection">
+          <div className="container">
+            <h2 className="text--center">Built for the field</h2>
+            <p className="text--center gallerySubtitle">
+              One solid block of anodized aluminum. Every port sealed. Ready for
+              your rack, your machine, or your tank.
+            </p>
+            <div className="row margin-top--lg">
+              <div className="col col--6 margin-bottom--lg">
+                <figure className="galleryFigure">
+                  <img
+                    src={useBaseUrl('/img/edge-branded.jpg')}
+                    alt="Edge-Compute front plate with labelled ports next to the opened enclosure showing the compute module"
+                  />
+                  <figcaption>
+                    <strong>Inside and out.</strong> Seven PoE ports, one WAN
+                    port, one 48 V DC input — and a swappable compute module on
+                    a skAInet carrier board. Available with your own branding on
+                    the front plate.
+                  </figcaption>
+                </figure>
+              </div>
+              <div className="col col--6 margin-bottom--lg">
+                <figure className="galleryFigure">
+                  <img
+                    src={useBaseUrl('/img/edge-in-use-1.jpg')}
+                    alt="Edge-Compute on a workbench with several M12 cables connected"
+                  />
+                  <figcaption>
+                    <strong>On the bench.</strong> Plug in a PoE measurement
+                    device, a WAN uplink, and power — that is the whole
+                    installation.
+                  </figcaption>
+                </figure>
+              </div>
             </div>
           </div>
         </section>

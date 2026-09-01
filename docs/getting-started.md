@@ -5,6 +5,10 @@ title: Getting Started
 
 # Getting Started
 
+![Edge-Compute front plate: PoE 1–7, WAN, and 48 V DC In](/img/edge-branded.jpg)
+
+All ports are labelled on the front plate: **PoE 1–7** (LAN), **WAN**, and **48 V DC In**.
+
 ## First connection
 
 1. Connect a computer (Windows, Linux, or macOS) to any LAN port using an
