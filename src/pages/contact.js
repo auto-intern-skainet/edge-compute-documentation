@@ -66,7 +66,7 @@ export default function Contact() {
             <div className="teamCard">
               <h3>Sales &amp; quotes</h3>
               <p>
-                Pricing starts at <strong>$299</strong> for the Edge-Compute.
+                Pricing starts at <strong>260 €</strong> (<strong>$299</strong>) for the Edge-Compute.
                 Send us your application and we will put together a quote
                 including the matching PoE measurement devices.
               </p>

@@ -128,20 +128,32 @@ const productJsonLd = {
     {'@type': 'PropertyValue', name: 'CPU', value: '8-core 64-bit ARM @ 1.5 GHz'},
     {'@type': 'PropertyValue', name: 'RAM', value: '8 GB LPDDR4-3200'},
     {'@type': 'PropertyValue', name: 'Storage', value: '32 GB eMMC'},
-    {'@type': 'PropertyValue', name: 'LAN ports', value: '7 × M12 Ethernet with PoE Class 3'},
+    {'@type': 'PropertyValue', name: 'LAN ports', value: '7 × M12 Ethernet with PoE+ (IEEE 802.3at)'},
     {'@type': 'PropertyValue', name: 'WAN ports', value: '1 × M12 Ethernet'},
     {'@type': 'PropertyValue', name: 'Power input', value: '48–72 V DC via M12'},
     {'@type': 'PropertyValue', name: 'Ingress protection', value: 'Sealed, operation under water up to 1 bar'},
     {'@type': 'PropertyValue', name: 'Operating system', value: 'Yocto Linux with documented SBOM'},
   ],
-  offers: {
-    '@type': 'AggregateOffer',
-    lowPrice: '299',
-    priceCurrency: 'USD',
-    availability: 'https://schema.org/InStock',
-    url: 'mailto:info@auto-intern.de',
-    seller: {'@id': 'https://www.auto-intern.de/#organization'},
-  },
+  offers: [
+    {
+      '@type': 'Offer',
+      price: '260',
+      priceCurrency: 'EUR',
+      priceSpecification: {'@type': 'PriceSpecification', price: '260', priceCurrency: 'EUR', minPrice: '260', valueAddedTaxIncluded: false},
+      availability: 'https://schema.org/InStock',
+      url: 'https://edge-compute.skainet.io/contact',
+      seller: {'@id': 'https://www.auto-intern.de/#organization'},
+    },
+    {
+      '@type': 'Offer',
+      price: '299',
+      priceCurrency: 'USD',
+      priceSpecification: {'@type': 'PriceSpecification', price: '299', priceCurrency: 'USD', minPrice: '299', valueAddedTaxIncluded: false},
+      availability: 'https://schema.org/InStock',
+      url: 'https://edge-compute.skainet.io/contact',
+      seller: {'@id': 'https://www.auto-intern.de/#organization'},
+    },
+  ],
 };
 
 export default function Home() {
@@ -185,7 +197,7 @@ export default function Home() {
                 Technical specifications →
               </Link>
               <p className="heroPrice">
-                Starting from <strong>$299</strong> ·{' '}
+                Starting from <strong>260 €</strong> / <strong>$299</strong> ·{' '}
                 <a href="mailto:info@auto-intern.de?subject=skAInet%20Edge-Compute%20quote">
                   request a quote
                 </a>
@@ -261,7 +273,7 @@ export default function Home() {
                     Two separate Ethernet interfaces let the device join an
                     upstream company network via its WAN port while spanning its
                     own DHCP network across the 7 LAN ports — and powering all
-                    7 LAN devices with <strong>PoE Class 3</strong> at the same
+                    7 LAN devices with <strong>PoE+ (IEEE 802.3at)</strong> at the same
                     time.
                   </p>
                 </div>

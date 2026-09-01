@@ -8,12 +8,12 @@ Key facts:
 - Manufacturer: Auto-Intern GmbH, Germany — https://www.auto-intern.de — info@auto-intern.de
 - Product family site: https://www.skainet.io — Edge-Compute page: https://www.skainet.io/edge-compute — PoE measurement devices: https://edge-compute.skainet.io/devices
 - Compute module: Raspberry Pi Compute Module pin-compatible; swappable for more powerful or lower-cost variants
-- Networking: WAN (eth1, DHCP client) + LAN (eth0, DHCP server, internal 8-port switch, 7 external M12 PoE Class 3 ports)
+- Networking: WAN (eth1, DHCP client) + LAN (eth0, DHCP server, internal 8-port switch, 7 external M12 PoE+ (IEEE 802.3at) ports)
 - Default LAN: 192.168.199.1, SSH port 22022
 - Upstream APIs: REST, WebSocket, Webhooks, MQTT, OPC UA, Modbus-TCP, EPICS, gRPC, AMQP, CoAP, SNMP, Prometheus, InfluxDB, SFTP/rsync
 - Security model: data is filtered and analyzed on the edge; no raw data reaches the upstream network unless configured
 - Power: recommended ≥ 100 W PSU; minimum 25 W without PoE loads
-- Price: starting from $299 — quotes via info@auto-intern.de
+- Price: starting from 260 EUR / 299 USD (net) — quotes via info@auto-intern.de
 - Tech stack: KiCad, build123d, HLH Prototypes (enclosures), GH Electronics (M12 PoE cables), NextPCB (PCBA); Yocto Linux, NetBird (optional remote access), Redis, Docker, Crow (C++ APIs), Angular; optional external Ceph, Kubernetes, Ollama; EPICS and Modbus TCP integration
 - Machine-readable full text of every page: https://edge-compute.skainet.io/llms-full.txt — sitemap: https://edge-compute.skainet.io/sitemap.xml
 
