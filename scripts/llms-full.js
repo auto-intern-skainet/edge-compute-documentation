@@ -71,8 +71,11 @@ function extract(html) {
   return {title, desc, body};
 }
 
+// Only the default (English) locale; /de/ and /zh/ are translations of the same pages.
+const LOCALE_DIRS = ['de', 'zh'].map((l) => path.join(BUILD, l) + path.sep);
 const pages = walk(BUILD)
   .filter((p) => !p.endsWith('404.html'))
+  .filter((p) => !LOCALE_DIRS.some((d) => p.startsWith(d)))
   .map((p) => {
     const rel = path.relative(BUILD, p).replace(/\\/g, '/');
     const url =

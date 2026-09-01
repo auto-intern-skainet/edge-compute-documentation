@@ -48,7 +48,7 @@ const config = {
             name: 'skAInet Edge-Compute',
             url: 'https://edge-compute.skainet.io/',
             publisher: {'@id': 'https://www.auto-intern.de/#organization'},
-            inLanguage: 'en',
+            inLanguage: ['en', 'de', 'zh-Hans'],
           },
         ],
       }),
@@ -64,7 +64,12 @@ const config = {
 
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en', 'de', 'zh'],
+    localeConfigs: {
+      en: {label: 'English', htmlLang: 'en'},
+      de: {label: 'Deutsch', htmlLang: 'de'},
+      zh: {label: '简体中文', htmlLang: 'zh-Hans'},
+    },
   },
 
   presets: [
@@ -110,6 +115,7 @@ const config = {
           {to: '/applications', label: 'Applications', position: 'left'},
           {to: '/team', label: 'Team & Research', position: 'left'},
           {to: '/contact', label: 'Contact', position: 'left'},
+          {type: 'localeDropdown', position: 'right'},
           {
             href: 'https://www.skainet.io',
             label: 'skainet.io',

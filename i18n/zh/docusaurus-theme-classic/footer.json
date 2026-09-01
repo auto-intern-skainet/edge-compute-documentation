@@ -1,0 +1,78 @@
+{
+  "link.title.Documentation": {
+    "message": "文档",
+    "description": "The title of the footer links column with title=Documentation in the footer"
+  },
+  "link.title.Develop": {
+    "message": "开发",
+    "description": "The title of the footer links column with title=Develop in the footer"
+  },
+  "link.title.Company": {
+    "message": "公司",
+    "description": "The title of the footer links column with title=Company in the footer"
+  },
+  "link.item.label.PoE Measurement Devices": {
+    "message": "PoE 测量设备",
+    "description": "The label of footer link with label=PoE Measurement Devices linking to /devices"
+  },
+  "link.item.label.Applications": {
+    "message": "应用案例",
+    "description": "The label of footer link with label=Applications linking to /applications"
+  },
+  "link.item.label.Getting Started": {
+    "message": "快速上手",
+    "description": "The label of footer link with label=Getting Started linking to /docs/getting-started"
+  },
+  "link.item.label.Technical Specifications": {
+    "message": "技术规格",
+    "description": "The label of footer link with label=Technical Specifications linking to /docs/specifications"
+  },
+  "link.item.label.Recovery & Maintenance": {
+    "message": "恢复与维护",
+    "description": "The label of footer link with label=Recovery & Maintenance linking to /docs/recovery"
+  },
+  "link.item.label.Minimal Mapper (C++)": {
+    "message": "Minimal Mapper (C++)",
+    "description": "The label of footer link with label=Minimal Mapper (C++) linking to https://github.com/auto-intern-skainet/edge-compute-minimal-mapper_cpp"
+  },
+  "link.item.label.Minimal Mapper (Python)": {
+    "message": "Minimal Mapper (Python)",
+    "description": "The label of footer link with label=Minimal Mapper (Python) linking to https://github.com/auto-intern-skainet/edge-compute-minimal-mapper_python"
+  },
+  "link.item.label.Minimal Aggregator (Python)": {
+    "message": "Minimal Aggregator (Python)",
+    "description": "The label of footer link with label=Minimal Aggregator (Python) linking to https://github.com/auto-intern-skainet/edge-compute-minimal-aggregator_python"
+  },
+  "link.item.label.skainet.io": {
+    "message": "skainet.io",
+    "description": "The label of footer link with label=skainet.io linking to https://www.skainet.io"
+  },
+  "link.item.label.Auto-Intern GmbH": {
+    "message": "Auto-Intern GmbH",
+    "description": "The label of footer link with label=Auto-Intern GmbH linking to https://www.auto-intern.de"
+  },
+  "link.item.label.Team & Research": {
+    "message": "团队与科研",
+    "description": "The label of footer link with label=Team & Research linking to /team"
+  },
+  "link.item.label.Contact": {
+    "message": "联系方式",
+    "description": "The label of footer link with label=Contact linking to /contact"
+  },
+  "link.item.label.Imprint / Impressum": {
+    "message": "法律声明",
+    "description": "The label of footer link with label=Imprint / Impressum linking to /imprint"
+  },
+  "link.item.label.Privacy / Datenschutz": {
+    "message": "隐私政策",
+    "description": "The label of footer link with label=Privacy / Datenschutz linking to /privacy"
+  },
+  "link.item.label.GitHub Issues": {
+    "message": "GitHub Issues",
+    "description": "The label of footer link with label=GitHub Issues linking to https://github.com/auto-intern-skainet/edge-compute-documentation/issues"
+  },
+  "copyright": {
+    "message": "版权所有 © 2026 Auto-Intern GmbH, Herner Str. 299, 44809 Bochum, Germany · <a href=\"/imprint\">法律声明</a> · <a href=\"/privacy\">隐私政策</a> · <a href=\"/contact\">联系方式</a>",
+    "description": "The footer copyright"
+  }
+}

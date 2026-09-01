@@ -1,0 +1,38 @@
+{
+  "title": {
+    "message": "Edge-Compute",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "skAInet 标志",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Documentation": {
+    "message": "文档",
+    "description": "Navbar item with label Documentation"
+  },
+  "item.label.Devices": {
+    "message": "测量设备",
+    "description": "Navbar item with label Devices"
+  },
+  "item.label.Applications": {
+    "message": "应用案例",
+    "description": "Navbar item with label Applications"
+  },
+  "item.label.Team & Research": {
+    "message": "团队与科研",
+    "description": "Navbar item with label Team & Research"
+  },
+  "item.label.Contact": {
+    "message": "联系方式",
+    "description": "Navbar item with label Contact"
+  },
+  "item.label.skainet.io": {
+    "message": "skainet.io",
+    "description": "Navbar item with label skainet.io"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  }
+}

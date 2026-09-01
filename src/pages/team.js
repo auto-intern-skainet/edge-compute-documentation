@@ -1,7 +1,9 @@
 import Link from '@docusaurus/Link';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 import Layout from '@theme/Layout';
 import Head from '@docusaurus/Head';
 import {publications} from '../data/publications';
+import {useContent} from '../content';
 
 const SITE = 'https://edge-compute.skainet.io';
 const ORG = 'https://www.auto-intern.de/#organization';
@@ -12,29 +14,18 @@ const RUB = {
   url: 'https://www.ruhr-uni-bochum.de/',
 };
 
-// Each member: `primary` is the profile the name links to; `links` are
-// secondary chips; the remaining fields feed the Person JSON-LD.
+// Locale-independent member data. Roles and bios come from src/content.
+// `primary` is the profile the name links to; `links` are secondary chips;
+// `photo` is a square image in static/img/team (null → initials).
 const team = [
   {
     id: 'stephan-boekelmann',
-    // Canonical entity lives on his own domain; this page is one occurrence.
     canonicalId: 'https://maxclerkwell.tech/#person',
     name: 'Stephan Bökelmann',
     givenName: 'Stephan',
     familyName: 'Bökelmann',
-    role: 'System Architect',
+    photo: '/img/team/stephan.jpg',
     primary: {label: 'maxclerkwell.tech', href: 'https://maxclerkwell.tech'},
-    bio: (
-      <>
-        Stephan joined Auto-Intern in 2014 and, together with Odin Holmes,
-        built its industrial process-diagnostics business into skAInet. He
-        designs the overall system — from carrier board and FPGA/Zynq
-        data-acquisition paths to the Yocto Linux image — and is completing a
-        PhD in experimental hadron physics (PANDA/FAIR) at Ruhr-Universität
-        Bochum. He writes about embedded, FPGA, and DAQ work at{' '}
-        <a href="https://maxclerkwell.tech">maxclerkwell.tech</a>.
-      </>
-    ),
     description:
       'System architect of the skAInet Edge-Compute. Chief Operating Officer of the AI-Gruppe, co-founder of skAInet, engineer and physicist working on FPGA/Zynq systems, PCB design, and high-throughput data acquisition; PhD candidate in experimental hadron physics (PANDA/FAIR) at Ruhr-Universität Bochum; lecturer; organizer of emBO++, KiCon Europe, and the Practical Data Science Congress.',
     links: [
@@ -81,19 +72,8 @@ const team = [
     name: 'Odin Holmes',
     givenName: 'Odin',
     familyName: 'Holmes',
-    role: 'Hardware Design and Implementation',
+    photo: '/img/team/odin.jpg',
     primary: {label: 'Twitter / X', href: 'https://x.com/odinthenerd'},
-    bio: (
-      <>
-        Odin co-founded Auto-Intern in 2001 and has spent more than 20 years
-        writing bare-metal embedded systems. He designs and implements the
-        Edge-Compute hardware and firmware, created the{' '}
-        <a href="https://github.com/kvasir-io/Kvasir">Kvasir</a>{' '}
-        register-abstraction library, chairs the embedded group of the ISO C++
-        committee (SG14), co-founded the emBO++ conference, and has spoken at
-        CppCon, C++Now, Meeting C++, and C++ Europe.
-      </>
-    ),
     description:
       'Hardware design and implementation of the skAInet Edge-Compute. Co-founder and managing director of Auto-Intern GmbH, head of development at skAInet, embedded C++ engineer with more than 20 years of bare-metal experience; creator of the Kvasir register-abstraction library, chair of the ISO C++ SG14 embedded study group, co-founder of the emBO++ conference, speaker at CppCon, C++Now, Meeting C++, and C++ Europe.',
     links: [
@@ -125,43 +105,20 @@ const team = [
     name: 'Tabea Bökelmann',
     givenName: 'Tabea',
     familyName: 'Bökelmann',
-    role: 'User Interaction',
-    primary: {
-      label: 'LinkedIn',
-      href: 'https://de.linkedin.com/in/tabea-r%C3%B6themeyer-0b9794198',
-    },
-    bio: (
-      <>
-        Tabea is a physicist and computer scientist who has been with
-        Auto-Intern since 2017. She shapes how people interact with the
-        Edge-Compute and its measurement devices — from the software and data
-        side to the sensor hardware she has led the design of in field
-        projects such as the 25square weather sensor network.
-      </>
-    ),
+    photo: '/img/team/tabea.jpg',
+    primary: {label: 'LinkedIn', href: 'https://de.linkedin.com/in/tabea-r%C3%B6themeyer-0b9794198'},
     description:
       'User interaction for the skAInet Edge-Compute. Physicist and computer scientist at Auto-Intern GmbH since 2017, Head of Software and of Data & Analytics; led the design and construction of the sensor hardware for the 25square street-level weather sensor network.',
     links: [{label: 'Twitter / X', href: 'https://x.com/tabeatheunicorn'}],
     jsonLd: {
       additionalName: 'Viktoria',
-      alternateName: [
-        'Tabea Viktoria Bökelmann',
-        'Tabea Röthemeyer',
-        'Tabea Viktoria Röthemeyer',
-      ],
+      alternateName: ['Tabea Viktoria Bökelmann', 'Tabea Röthemeyer', 'Tabea Viktoria Röthemeyer'],
       jobTitle: ['User Interaction', 'Head of Software', 'Head of Data & Analytics'],
       affiliation: [
         {'@id': ORG},
         {'@type': 'Organization', name: 'AI-Gruppe', url: 'https://gruppe.ai/'},
       ],
-      knowsAbout: [
-        'User interaction design',
-        'Software engineering',
-        'Data analytics',
-        'Sensor hardware',
-        'Physics',
-        'Computer science',
-      ],
+      knowsAbout: ['User interaction design', 'Software engineering', 'Data analytics', 'Sensor hardware', 'Physics', 'Computer science'],
     },
   },
   {
@@ -169,17 +126,8 @@ const team = [
     name: 'René Glitza',
     givenName: 'René',
     familyName: 'Glitza',
-    role: 'Analytics, Learning and AI',
+    photo: null,
     primary: {label: 'ResearchGate', href: 'https://www.researchgate.net/profile/Rene-Glitza'},
-    bio: (
-      <>
-        René leads predictive-maintenance projects at skAInet and researches
-        privacy-preserving federated learning for acoustic sensor networks at
-        the Institute of Communication Acoustics, Ruhr-Universität Bochum. He
-        holds an M.Sc. in embedded systems and is part of{' '}
-        <a href="https://nexufed.ai">NexuFed AI</a>.
-      </>
-    ),
     description:
       'Analytics, machine learning, and AI for the skAInet Edge-Compute. Senior Engineer, Systems Design at Auto-Intern GmbH leading predictive-maintenance projects; researcher at the Institute of Communication Acoustics, Ruhr-Universität Bochum, on privacy-preserving federated learning, anomalous sound detection, and acoustic sensor networks; M.Sc. in electrical engineering and information technology (embedded systems); part of NexuFed AI.',
     links: [
@@ -217,32 +165,21 @@ const team = [
     name: 'Philipp Lehmann',
     givenName: 'Philipp',
     familyName: 'Lehmann',
-    role: 'Cyber Security',
+    photo: null,
     primary: {label: 'GitHub', href: 'https://github.com/PhilippTheServer'},
-    bio: (
-      <>
-        Philipp looks after the security side of the Edge-Compute — the
-        hardened Yocto Linux image, its documented SBOM, and the network
-        architecture that keeps raw data on the LAN side unless you decide
-        otherwise.
-      </>
-    ),
     description:
       'Cyber security for the skAInet Edge-Compute at Auto-Intern GmbH / AI-Gruppe: hardened Yocto Linux image, software bill of materials (SBOM), Cyber Resilience Act alignment, and the segmented network architecture between LAN and WAN.',
-    links: [{label: 'Twitter / X', href: 'https://x.com/philippthecron'}],
+    links: [
+      {label: 'LinkedIn', href: 'https://www.linkedin.com/in/philipp-lehmann-17995521b/'},
+      {label: 'Twitter / X', href: 'https://x.com/philippthecron'},
+    ],
     jsonLd: {
       jobTitle: ['Cyber Security'],
       affiliation: [
         {'@id': ORG},
         {'@type': 'Organization', name: 'AI-Gruppe', url: 'https://gruppe.ai/'},
       ],
-      knowsAbout: [
-        'Cyber security',
-        'Embedded Linux hardening',
-        'Software bill of materials (SBOM)',
-        'EU Cyber Resilience Act',
-        'Network segmentation',
-      ],
+      knowsAbout: ['Cyber security', 'Embedded Linux hardening', 'Software bill of materials (SBOM)', 'EU Cyber Resilience Act', 'Network segmentation'],
     },
   },
 ];
@@ -259,6 +196,7 @@ function personJsonLd(m) {
     ...(jsonLd.alternateName ? {alternateName: jsonLd.alternateName} : {}),
     jobTitle: jsonLd.jobTitle || m.role,
     description: m.description,
+    ...(m.photo ? {image: `${SITE}${m.photo}`} : {}),
     url: m.primary.href,
     mainEntityOfPage: `${SITE}/team`,
     sameAs: [m.primary.href, ...m.links.map((l) => l.href)],
@@ -300,37 +238,54 @@ const teamJsonLd = {
       datePublished: String(p.year),
       isPartOf: {'@type': 'Periodical', name: p.venue},
       url: p.url,
-      ...(p.url.startsWith('https://doi.org/') ? {identifier: {'@type': 'PropertyValue', propertyID: 'DOI', value: p.url.replace('https://doi.org/', '')}} : {}),
+      ...(p.url.startsWith('https://doi.org/')
+        ? {identifier: {'@type': 'PropertyValue', propertyID: 'DOI', value: p.url.replace('https://doi.org/', '')}}
+        : {}),
       abstract: p.summary,
     })),
   ],
 };
 
-function Member({m}) {
+function Avatar({m}) {
+  if (m.photo) {
+    return <img className="teamPhoto" src={useBaseUrl(m.photo)} alt={m.name} width="120" height="120" />;
+  }
+  const initials = `${m.givenName[0]}${m.familyName[0]}`;
+  return (
+    <div className="teamPhoto teamPhoto--initials" aria-hidden="true">
+      {initials}
+    </div>
+  );
+}
+
+function Member({m, t}) {
   return (
     <div className="col col--6 margin-bottom--lg" id={m.id}>
-      <div className="teamCard">
-        <h3>
-          <a href={m.primary.href}>{m.name}</a>
-        </h3>
-        <p className="teamRole">{m.role}</p>
-        <p>{m.bio}</p>
-        <div className="teamLinks">
-          <a className="teamLink teamLink--primary" href={m.primary.href}>
-            {m.primary.label}
-          </a>
-          {m.links.map((l) => (
-            <a className="teamLink" href={l.href} key={l.href}>
-              {l.label}
+      <div className="teamCard teamCard--withPhoto">
+        <Avatar m={m} />
+        <div>
+          <h3>
+            <a href={m.primary.href}>{m.name}</a>
+          </h3>
+          <p className="teamRole">{t.roles[m.id]}</p>
+          <p>{t.bios[m.id]}</p>
+          <div className="teamLinks">
+            <a className="teamLink teamLink--primary" href={m.primary.href}>
+              {m.primary.label}
             </a>
-          ))}
+            {m.links.map((l) => (
+              <a className="teamLink" href={l.href} key={l.href}>
+                {l.label}
+              </a>
+            ))}
+          </div>
         </div>
       </div>
     </div>
   );
 }
 
-function Publication({p}) {
+function Publication({p, t}) {
   return (
     <li className="pubItem">
       <a href={p.url}>
@@ -342,7 +297,7 @@ function Publication({p}) {
       {p.summary && <div className="pubSummary">{p.summary}</div>}
       {p.related && p.related.length > 0 && (
         <div className="pubRelated">
-          Related:{' '}
+          {t.related}{' '}
           {p.related.map((r, i) => (
             <span key={r.href}>
               {i > 0 && ', '}
@@ -356,45 +311,36 @@ function Publication({p}) {
 }
 
 export default function Team() {
+  const c = useContent();
+  const t = c.team;
   return (
-    <Layout
-      title="Team & Research"
-      description="The engineers behind the skAInet Edge-Compute, and the research it grew out of.">
+    <Layout title={t.title} description={t.metaDescription}>
       <Head>
         <script type="application/ld+json">{JSON.stringify(teamJsonLd)}</script>
       </Head>
       <header className="pageHero">
         <div className="container">
-          <h1>Team &amp; Research</h1>
-          <p className="pageHeroLead">
-            The skAInet Edge-Compute is built in Bochum, Germany, by a small
-            team of embedded engineers and physicists — and it grew out of
-            real research problems.
-          </p>
+          <h1>{t.title}</h1>
+          <p className="pageHeroLead">{t.lead}</p>
         </div>
       </header>
 
       <main className="container useCaseList">
         <section className="margin-bottom--xl">
-          <h2>The team</h2>
+          <h2>{t.teamHeading}</h2>
           <div className="row margin-top--lg">
             {team.map((m) => (
-              <Member m={m} key={m.id} />
+              <Member m={m} t={t} key={m.id} />
             ))}
           </div>
         </section>
 
         <section className="margin-bottom--xl" id="publications">
-          <h2>Publications</h2>
-          <p className="pubIntro">
-            Peer-reviewed work by the team that informs the Edge-Compute — from
-            federated learning on sensor networks to river monitoring and
-            detector physics at GSI/FAIR. Each entry links to the application
-            it relates to.
-          </p>
+          <h2>{t.publicationsHeading}</h2>
+          <p className="pubIntro">{t.publicationsIntro}</p>
           <ul className="pubList">
             {publications.map((p) => (
-              <Publication p={p} key={p.url} />
+              <Publication p={p} t={t} key={p.url} />
             ))}
           </ul>
         </section>
@@ -402,17 +348,14 @@ export default function Team() {
 
       <section className="specStrip">
         <div className="container">
-          <h2>Want to work with us?</h2>
-          <p className="specLabel closerText">
-            Whether you are a company with a measurement problem or a research
-            group with a detector to control — we would like to hear from you.
-          </p>
+          <h2>{t.closer.title}</h2>
+          <p className="specLabel closerText">{t.closer.text}</p>
           <div className="heroButtons margin-top--md">
             <Link className="button button--primary button--lg" href="mailto:info@auto-intern.de">
-              Get in Touch
+              {c.common.getInTouch}
             </Link>
             <Link className="button button--secondary button--outline button--lg" to="/applications">
-              See the Applications
+              {c.common.seeTheApplications}
             </Link>
           </div>
         </div>

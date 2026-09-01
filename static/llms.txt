@@ -4,6 +4,8 @@
 
 This site is the product documentation and marketing site for the skAInet Edge-Compute. It is generated with Docusaurus and hosted on GitHub Pages. Source: https://github.com/auto-intern-skainet/edge-compute-documentation
 
+Languages: English (default, all URLs below), German at https://edge-compute.skainet.io/de/ and Simplified Chinese at https://edge-compute.skainet.io/zh/ — same page structure, prefix the path with /de or /zh. Every page carries hreflang alternates.
+
 Key facts:
 - Manufacturer: Auto-Intern GmbH, Germany — https://www.auto-intern.de — info@auto-intern.de
 - Product family site: https://www.skainet.io — Edge-Compute page: https://www.skainet.io/edge-compute — PoE measurement devices: https://edge-compute.skainet.io/devices
