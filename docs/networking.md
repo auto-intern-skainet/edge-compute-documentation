@@ -30,5 +30,5 @@ There are **7 external M12 LAN connectors**, each providing:
 This allows connecting skAInet measurement devices with a **single Cat-5e M12
 Ethernet cable**.
 
-More devices can be found at
-[www.skainet.io/measurements](https://www.skainet.io/measurements).
+See the full range of [PoE measurement devices](/devices) built for the
+Edge-Compute.

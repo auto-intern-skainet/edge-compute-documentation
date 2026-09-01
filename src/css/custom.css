@@ -463,3 +463,42 @@
 .pubSummary {
   margin-top: 0.3rem;
 }
+
+/* Devices page */
+.deviceCard {
+  height: 100%;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  background: var(--ifm-background-surface-color);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.deviceCard:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0, 137, 247, 0.15);
+}
+.deviceHeader {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+.deviceHeader h3 {
+  margin-bottom: 0;
+}
+.deviceIcon {
+  font-size: 2rem;
+  line-height: 1;
+}
+.deviceTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+.deviceTag {
+  font-size: 0.8rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  background: var(--ifm-color-emphasis-100);
+  color: var(--ifm-color-emphasis-800);
+}

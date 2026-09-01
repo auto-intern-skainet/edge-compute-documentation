@@ -106,6 +106,7 @@ const config = {
             position: 'left',
             label: 'Documentation',
           },
+          {to: '/devices', label: 'Devices', position: 'left'},
           {to: '/applications', label: 'Applications', position: 'left'},
           {to: '/team', label: 'Team & Research', position: 'left'},
           {
@@ -126,6 +127,7 @@ const config = {
           {
             title: 'Documentation',
             items: [
+              {label: 'PoE Measurement Devices', to: '/devices'},
               {label: 'Applications', to: '/applications'},
               {label: 'Getting Started', to: '/docs/getting-started'},
               {label: 'Technical Specifications', to: '/docs/specifications'},

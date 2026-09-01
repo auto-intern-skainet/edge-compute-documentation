@@ -262,7 +262,7 @@ export default function Applications() {
             </Link>
             <Link
               className="button button--secondary button--outline button--lg"
-              href="https://www.skainet.io/measurements">
+              to="/devices">
               PoE Measurement Devices
             </Link>
           </div>

@@ -25,8 +25,9 @@ skAInet products, but not exclusively) with a local compute node that:
 - Runs triggers and simple analytics
 - Streams or uploads aggregated data to higher layers in any Ethernet hierarchy
 
-More measurement devices can be found at
-[www.skainet.io/measurements](https://www.skainet.io/measurements).
+See the [PoE measurement devices](/devices) built for the Edge-Compute —
+power, temperature, digital I/O, IO-Link, impedance spectroscopy, infrared,
+and signaling.
 
 ## Where to go next
 
