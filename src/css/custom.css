@@ -440,6 +440,23 @@
   color: var(--ifm-color-primary);
   text-decoration: none;
 }
+.teamLink--primary {
+  border-color: var(--ifm-color-primary);
+  background: var(--ifm-color-primary);
+  color: #ffffff;
+  font-weight: 600;
+}
+.teamLink--primary:hover {
+  background: var(--ifm-color-primary-dark);
+  color: #ffffff;
+}
+.teamCard h3 a {
+  color: inherit;
+}
+.teamCard h3 a:hover {
+  color: var(--ifm-color-primary);
+  text-decoration: none;
+}
 .pubIntro {
   max-width: 760px;
   color: var(--ifm-color-emphasis-700);

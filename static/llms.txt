@@ -34,7 +34,7 @@ Key facts:
 
 ## Team & Research
 
-- [Team & Research](https://auto-intern-skainet.github.io/edge-compute-documentation/team): The engineers behind the Edge-Compute (Odin Holmes, Stephan Bökelmann, René Glitza, Philipp Lehmann) and a curated list of their publications — federated learning for acoustic sensor networks (RUB IKA / NexuFed AI), electrochemical river biofilm sensing (MSU), PANDA collaboration papers (GSI/FAIR), and the autowerkstatt4null diagnostics ecosystem
+- [Team & Research](https://auto-intern-skainet.github.io/edge-compute-documentation/team): The team behind the Edge-Compute — Stephan Bökelmann (system architect), Odin Holmes (hardware design and implementation), Tabea Bökelmann (user interaction), René Glitza (analytics, learning and AI), Philipp Lehmann (cyber security) and a curated list of their publications — federated learning for acoustic sensor networks (RUB IKA / NexuFed AI), electrochemical river biofilm sensing (MSU), PANDA collaboration papers (GSI/FAIR), and the autowerkstatt4null diagnostics ecosystem
 - [maxclerkwell.tech](https://maxclerkwell.tech): Stephan Bökelmann's blog on embedded, FPGA, and data-acquisition engineering
 
 ## Example code
