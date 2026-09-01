@@ -141,7 +141,12 @@ const team = [
       'User interaction for the skAInet Edge-Compute. Physicist and computer scientist at Auto-Intern GmbH since 2017, Head of Software and of Data & Analytics; led the design and construction of the sensor hardware for the 25square street-level weather sensor network.',
     links: [{label: 'Twitter / X', href: 'https://x.com/tabeatheunicorn'}],
     jsonLd: {
-      alternateName: 'Tabea Röthemeyer',
+      additionalName: 'Viktoria',
+      alternateName: [
+        'Tabea Viktoria Bökelmann',
+        'Tabea Röthemeyer',
+        'Tabea Viktoria Röthemeyer',
+      ],
       jobTitle: ['User Interaction', 'Head of Software', 'Head of Data & Analytics'],
       affiliation: [
         {'@id': ORG},
@@ -247,6 +252,7 @@ function personJsonLd(m) {
     '@id': `${SITE}/team#${m.id}`,
     name: m.name,
     givenName: m.givenName,
+    ...(jsonLd.additionalName ? {additionalName: jsonLd.additionalName} : {}),
     familyName: m.familyName,
     ...(jsonLd.alternateName ? {alternateName: jsonLd.alternateName} : {}),
     jobTitle: jsonLd.jobTitle || m.role,
