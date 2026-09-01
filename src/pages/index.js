@@ -45,6 +45,23 @@ const specs = [
   {value: '1 bar', label: 'waterproof operation'},
 ];
 
+const protocols = [
+  'REST',
+  'WebSocket',
+  'Webhooks',
+  'MQTT',
+  'OPC UA',
+  'Modbus-TCP',
+  'EPICS',
+  'gRPC',
+  'AMQP',
+  'CoAP',
+  'SNMP',
+  'Prometheus',
+  'InfluxDB',
+  'SFTP / rsync',
+];
+
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
@@ -113,6 +130,92 @@ export default function Home() {
           </div>
         </section>
 
+        <section className="platformSection">
+          <div className="container">
+            <h2 className="text--center">The universal data acquisition and monitoring platform</h2>
+            <p className="text--center platformLead">
+              The skAInet Edge-Compute is Auto-Intern's universal platform for
+              data acquisition and monitoring — developed in Germany over years
+              of hands-on work. The current version <strong>v1.5</strong> and
+              its predecessors run 365/24/7 in numerous plants, collecting data,
+              operating measurement devices, analyzing, and delivering useful
+              insights from machines and equipment.
+            </p>
+
+            <div className="row margin-top--lg">
+              <div className="col col--4 margin-bottom--lg">
+                <div className="platformCard">
+                  <h3>Inside the enclosure</h3>
+                  <p>
+                    At the heart of the skAInet Edge-Compute sits a compute
+                    module that is pin-compatible with the Raspberry Pi Compute
+                    Module family. On request, it can be replaced with a more
+                    powerful or a more cost-effective variant — the enclosure,
+                    carrier board, and ports stay the same.
+                  </p>
+                  <p>
+                    Two separate Ethernet interfaces let the device join an
+                    upstream company network via its WAN port while spanning its
+                    own DHCP network across the 7 LAN ports — and powering all
+                    7 LAN devices with <strong>PoE Class 3</strong> at the same
+                    time.
+                  </p>
+                </div>
+              </div>
+
+              <div className="col col--4 margin-bottom--lg">
+                <div className="platformCard">
+                  <h3>Open, audited, compliant</h3>
+                  <p>
+                    The skAInet Edge-Compute runs a <strong>Yocto Linux</strong>{' '}
+                    with a documented software bill of materials (SBOM), in line
+                    with the EU Cyber Resilience Act and comparable regulations.
+                  </p>
+                  <p>
+                    Open source software — quality-checked, configured, and
+                    provisioned by Auto-Intern with more than{' '}
+                    <strong>25 years of embedded expertise</strong>.
+                  </p>
+                </div>
+              </div>
+
+              <div className="col col--4 margin-bottom--lg">
+                <div className="platformCard">
+                  <h3>Your data, your rules</h3>
+                  <p>
+                    The Edge-Compute collects, polls, and receives information
+                    from sensors, PLCs, computers, and any other network-enabled
+                    device. With two separated Ethernet interfaces, data is
+                    filtered on the edge and analyzed on powerful processors
+                    before it goes anywhere.
+                  </p>
+                  <p>
+                    Thanks to the modern security architecture,{' '}
+                    <strong>no raw data reaches your upstream network</strong>{' '}
+                    unless you want it to.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="protocolBlock">
+              <h3 className="text--center">One API for every upstream system</h3>
+              <p className="text--center platformLead">
+                At the same time, the skAInet Edge-Compute serves an API to all
+                upstream devices — in whatever protocol they speak:
+              </p>
+              <div className="protocolList">
+                {protocols.map((p) => (
+                  <span className="protocolChip" key={p}>
+                    {p}
+                  </span>
+                ))}
+                <span className="protocolChip protocolChip--more">and more</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section className="gallerySection">
           <div className="container">
             <h2 className="text--center">Built for the field</h2>
@@ -154,17 +257,20 @@ export default function Home() {
 
         <section className="specStrip">
           <div className="container">
-            <h2>Ready to bring compute to your measurements?</h2>
-            <p className="specLabel">
-              Explore the documentation, clone a minimal example, or talk to us
-              directly.
+            <h2>Bring compute to your measurements.</h2>
+            <p className="specLabel closerText">
+              Whether you are connecting a single sensor or instrumenting an
+              entire plant: the skAInet Edge-Compute gives you a rugged,
+              secure, and open platform that is already proven in the field.
+              Tell us what you want to measure — we will tell you how to get
+              there.
             </p>
             <div className="heroButtons margin-top--md">
-              <Link className="button button--primary button--lg" to="/docs/overview">
-                Read the Docs
+              <Link className="button button--primary button--lg" href="mailto:info@auto-intern.de?subject=skAInet%20Edge-Compute">
+                Talk to Us
               </Link>
-              <Link className="button button--secondary button--outline button--lg" href="mailto:info@auto-intern.de">
-                Contact Us
+              <Link className="button button--secondary button--outline button--lg" to="/docs/overview">
+                Read the Docs
               </Link>
             </div>
           </div>
