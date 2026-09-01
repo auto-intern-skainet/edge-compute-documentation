@@ -106,6 +106,7 @@ const config = {
             items: [
               {label: 'skainet.io', href: 'https://www.skainet.io'},
               {label: 'Contact', href: 'mailto:info@auto-intern.de'},
+              {label: 'Imprint', href: 'https://skainet.io/imprint/'},
               {
                 label: 'GitHub Issues',
                 href: 'https://github.com/auto-intern-skainet/edge-compute-documentation/issues',
@@ -113,7 +114,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Auto-Intern GmbH, Germany.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Auto-Intern GmbH, Germany. · <a href="https://skainet.io/imprint/">Imprint</a>`,
       },
       prism: {
         additionalLanguages: ['bash'],
