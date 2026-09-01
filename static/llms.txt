@@ -1,0 +1,56 @@
+# skAInet Edge-Compute
+
+> Programmable M12-PoE switch, router, and compute module for industrial edge applications, made by Auto-Intern GmbH, Germany. Rugged anodized aluminum enclosure, fully sealed M12 connectors, operation under water up to 1 bar, 48–72 V DC input, 7 PoE LAN ports plus 1 WAN port, 8-core 64-bit ARM CPU, 8 GB RAM, 32 GB eMMC. Runs Yocto Linux with a documented SBOM (Cyber Resilience Act aligned). Version v1.5.
+
+This site is the product documentation and marketing site for the skAInet Edge-Compute. It is generated with Docusaurus and hosted on GitHub Pages. Source: https://github.com/auto-intern-skainet/edge-compute-documentation
+
+Key facts:
+- Manufacturer: Auto-Intern GmbH, Germany — https://www.auto-intern.de — info@auto-intern.de
+- Product family site: https://www.skainet.io — Edge-Compute page: https://www.skainet.io/edge-compute — PoE measurement devices: https://edge-compute.skainet.io/devices
+- Compute module: Raspberry Pi Compute Module pin-compatible; swappable for more powerful or lower-cost variants
+- Networking: WAN (eth1, DHCP client) + LAN (eth0, DHCP server, internal 8-port switch, 7 external M12 PoE Class 3 ports)
+- Default LAN: 192.168.199.1, SSH port 22022
+- Upstream APIs: REST, WebSocket, Webhooks, MQTT, OPC UA, Modbus-TCP, EPICS, gRPC, AMQP, CoAP, SNMP, Prometheus, InfluxDB, SFTP/rsync
+- Security model: data is filtered and analyzed on the edge; no raw data reaches the upstream network unless configured
+- Power: recommended ≥ 100 W PSU; minimum 25 W without PoE loads
+- Price: starting from $299 — quotes via info@auto-intern.de
+- Tech stack: KiCad, build123d, HLH Prototypes (enclosures), GH Electronics (M12 PoE cables), NextPCB (PCBA); Yocto Linux, NetBird (optional remote access), Redis, Docker, Crow (C++ APIs), Angular; optional external Ceph, Kubernetes, Ollama; EPICS and Modbus TCP integration
+- Machine-readable full text of every page: https://edge-compute.skainet.io/llms-full.txt — sitemap: https://edge-compute.skainet.io/sitemap.xml
+
+## Documentation
+
+- [Overview](https://edge-compute.skainet.io/docs/overview): What the Edge-Compute is and where to start
+- [Technical Specifications](https://edge-compute.skainet.io/docs/specifications): Compute, networking, power, and environmental specs
+- [Getting Started](https://edge-compute.skainet.io/docs/getting-started): First connection, SSH access, default credentials, manufacturer key
+- [Networking Architecture](https://edge-compute.skainet.io/docs/networking): WAN/LAN layout, PoE ports
+- [Developing on the Edge-Compute](https://edge-compute.skainet.io/docs/development): Mapper/aggregator pattern and minimal example repositories in C++ and Python
+- [Tech Stack](https://edge-compute.skainet.io/docs/tech-stack): Hardware (KiCad, build123d, HLH Prototypes enclosures, GH Electronics certified M12 PoE cables, NextPCB PCBA), system (Yocto Linux, NetBird remote access, Redis, Docker, CrowCpp APIs, Angular frontends), optional external integrations (Ceph storage, Kubernetes analytics, Ollama insights), and protocols (EPICS for experimental physics, Modbus TCP for plant networks)
+- [Power & Mounting](https://edge-compute.skainet.io/docs/power-and-mounting): Power supply requirements and mounting drawing
+- [Recovery & Maintenance](https://edge-compute.skainet.io/docs/recovery): Reflashing the base image, serial console access
+
+## PoE Measurement Devices
+
+- [PoE Measurement Devices](https://edge-compute.skainet.io/devices): Downstream connector boxes built by the skAInet team, one M12 PoE cable each — skAInet PowerSense (galvanically coupled 1-/3-phase power measurement), skAInet PowerProbe (galvanically isolated 3-phase power measurement via E-field/B-field), skAInet TempProbe (36-channel Type-K thermocouple converter with cold-junction compensation), skAInet IO (multi-channel digital inputs/outputs), skAInet iolink (bus coupler for up to 6 IO-Link sensors), skAInet EIS (electrochemical impedance spectroscopy converter, with MSU Center for Biofilm Engineering), skAInet IRcam (infrared camera for temperature monitoring), skAInet StackLight (extensible stack light with skAInet IO)
+
+## Applications
+
+- [Applications](https://edge-compute.skainet.io/applications): Six field deployments — DB Netz DIANA switch-point motor monitoring; Kelvion IR fouling detection on air-fin coolers; NexuFed AI + Ruhr-Universität Bochum federated pump condition monitoring; Global Point + Kurtz Ersa HORUS soldering process monitoring; RUB EP1 + GSI/FAIR PANDA luminosity detector control; Montana State University Center for Biofilm Engineering river water impedance spectroscopy
+
+## Team & Research
+
+- [Team & Research](https://edge-compute.skainet.io/team): The team behind the Edge-Compute — Stephan Bökelmann (system architect), Odin Holmes (hardware design and implementation), Tabea Bökelmann (user interaction; same person as Tabea Viktoria Bökelmann, Tabea Röthemeyer, and Tabea Viktoria Röthemeyer), René Glitza (analytics, learning and AI), Philipp Lehmann (cyber security) and a curated list of their publications — federated learning for acoustic sensor networks (RUB IKA / NexuFed AI), electrochemical river biofilm sensing (MSU), PANDA collaboration papers (GSI/FAIR), and the autowerkstatt4null diagnostics ecosystem
+- [maxclerkwell.tech](https://maxclerkwell.tech): Stephan Bökelmann's blog on embedded, FPGA, and data-acquisition engineering
+
+## Example code
+
+- [edge-compute-minimal-mapper_cpp](https://github.com/auto-intern-skainet/edge-compute-minimal-mapper_cpp): Simple data mapper in C++
+- [edge-compute-minimal-mapper_cpp-in-docker](https://github.com/auto-intern-skainet/edge-compute-minimal-mapper_cpp-in-docker): The C++ mapper, containerized
+- [edge-compute-minimal-mapper_python](https://github.com/auto-intern-skainet/edge-compute-minimal-mapper_python): Simple data mapper in Python
+- [edge-compute-minimal-aggregator_python](https://github.com/auto-intern-skainet/edge-compute-minimal-aggregator_python): Minimal data aggregator
+- [edge-compute-dummy-measurement_python](https://github.com/auto-intern-skainet/edge-compute-dummy-measurement_python): Dummy measurement source for testing without hardware
+
+## Optional
+
+- [GitHub organization](https://github.com/auto-intern-skainet): All Edge-Compute repositories
+- [Issue tracker](https://github.com/auto-intern-skainet/edge-compute-documentation/issues): Questions and bug reports
+- [Imprint](https://skainet.io/imprint/): Legal notice
