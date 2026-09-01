@@ -62,6 +62,46 @@ const protocols = [
   'SFTP / rsync',
 ];
 
+const customers = [
+  {name: 'Kurtz Ersa', file: 'kurtz-ersa.svg'},
+  {name: 'DB Netz AG', file: 'db.svg'},
+  {name: 'Framatome', file: 'framatome.svg'},
+  {name: 'Kelvion', file: 'kelvion.svg'},
+  {name: 'RAG', file: 'rag.svg'},
+  {name: 'Montana State University', file: 'msu.svg'},
+  {name: 'GSI / FAIR', file: 'gsi.svg'},
+];
+
+function LogoCarousel() {
+  // The list is rendered twice so the CSS animation can loop seamlessly.
+  const items = [...customers, ...customers];
+  return (
+    <section className="customerSection">
+      <div className="container">
+        <h2 className="text--center">
+          Trusted in the field
+        </h2>
+        <p className="text--center customerSubtitle">
+          Companies and research institutions already running skAInet
+          Edge-Compute technology
+        </p>
+      </div>
+      <div className="logoMarquee" aria-label="Customer logos">
+        <div className="logoTrack">
+          {items.map((c, i) => (
+            <div className="logoCard" key={`${c.file}-${i}`} title={c.name}>
+              <img
+                src={useBaseUrl(`/img/logos/${c.file}`)}
+                alt={c.name}
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
@@ -113,6 +153,8 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        <LogoCarousel />
 
         <section className="featureSection">
           <div className="container">
