@@ -197,7 +197,7 @@ export default function Home() {
                 Technical specifications →
               </Link>
               <p className="heroPrice">
-                Starting from <strong>260 €</strong> / <strong>$299</strong> ·{' '}
+                Starting from <strong>260 €</strong> / <strong>$299</strong> net ·{' '}
                 <a href="mailto:info@auto-intern.de?subject=skAInet%20Edge-Compute%20quote">
                   request a quote
                 </a>
