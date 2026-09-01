@@ -33,6 +33,7 @@ const team = [
       {label: 'Talks', href: 'https://maxclerkwell.tech/talks/'},
       {label: 'GitHub', href: 'https://github.com/maxclerkwell'},
       {label: 'Twitter / X', href: 'https://x.com/maxclerkwell'},
+      {label: 'Instagram', href: 'https://instagram.com/_maxclerkwell'},
       {label: 'LinkedIn', href: 'https://de.linkedin.com/in/accelerator-stephan'},
       {label: 'ORCID', href: 'https://orcid.org/0000-0002-2119-0064'},
       {label: 'ResearchGate', href: 'https://www.researchgate.net/profile/Stephan-Boekelmann'},
