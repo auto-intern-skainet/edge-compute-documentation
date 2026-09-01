@@ -1,0 +1,43 @@
+# skAInet Edge-Compute
+
+> Programmable M12-PoE switch, router, and compute module for industrial edge applications, made by Auto-Intern GmbH, Germany. Rugged anodized aluminum enclosure, fully sealed M12 connectors, operation under water up to 1 bar, 48–72 V DC input, 7 PoE LAN ports plus 1 WAN port, 8-core 64-bit ARM CPU, 8 GB RAM, 32 GB eMMC. Runs Yocto Linux with a documented SBOM (Cyber Resilience Act aligned). Version v1.5.
+
+This site is the product documentation and marketing site for the skAInet Edge-Compute. It is generated with Docusaurus and hosted on GitHub Pages. Source: https://github.com/auto-intern-skainet/edge-compute-documentation
+
+Key facts:
+- Manufacturer: Auto-Intern GmbH, Germany — https://www.auto-intern.de — info@auto-intern.de
+- Product family site: https://www.skainet.io — Edge-Compute page: https://www.skainet.io/edge-compute — PoE measurement devices: https://www.skainet.io/measurements
+- Compute module: Raspberry Pi Compute Module pin-compatible; swappable for more powerful or lower-cost variants
+- Networking: WAN (eth1, DHCP client) + LAN (eth0, DHCP server, internal 8-port switch, 7 external M12 PoE Class 3 ports)
+- Default LAN: 192.168.199.1, SSH port 22022
+- Upstream APIs: REST, WebSocket, Webhooks, MQTT, OPC UA, Modbus-TCP, EPICS, gRPC, AMQP, CoAP, SNMP, Prometheus, InfluxDB, SFTP/rsync
+- Security model: data is filtered and analyzed on the edge; no raw data reaches the upstream network unless configured
+- Power: recommended ≥ 100 W PSU; minimum 25 W without PoE loads
+
+## Documentation
+
+- [Overview](https://auto-intern-skainet.github.io/edge-compute-documentation/docs/overview): What the Edge-Compute is and where to start
+- [Technical Specifications](https://auto-intern-skainet.github.io/edge-compute-documentation/docs/specifications): Compute, networking, power, and environmental specs
+- [Getting Started](https://auto-intern-skainet.github.io/edge-compute-documentation/docs/getting-started): First connection, SSH access, default credentials, manufacturer key
+- [Networking Architecture](https://auto-intern-skainet.github.io/edge-compute-documentation/docs/networking): WAN/LAN layout, PoE ports
+- [Developing on the Edge-Compute](https://auto-intern-skainet.github.io/edge-compute-documentation/docs/development): Mapper/aggregator pattern and minimal example repositories in C++ and Python
+- [Power & Mounting](https://auto-intern-skainet.github.io/edge-compute-documentation/docs/power-and-mounting): Power supply requirements and mounting drawing
+- [Recovery & Maintenance](https://auto-intern-skainet.github.io/edge-compute-documentation/docs/recovery): Reflashing the base image, serial console access
+
+## Applications
+
+- [Applications](https://auto-intern-skainet.github.io/edge-compute-documentation/applications): Six field deployments — DB Netz DIANA switch-point motor monitoring; Kelvion IR fouling detection on air-fin coolers; NexuFed AI + Ruhr-Universität Bochum federated pump condition monitoring; Global Point + Kurtz Ersa HORUS soldering process monitoring; RUB EP1 + GSI/FAIR PANDA luminosity detector control; Montana State University Center for Biofilm Engineering river water impedance spectroscopy
+
+## Example code
+
+- [edge-compute-minimal-mapper_cpp](https://github.com/auto-intern-skainet/edge-compute-minimal-mapper_cpp): Simple data mapper in C++
+- [edge-compute-minimal-mapper_cpp-in-docker](https://github.com/auto-intern-skainet/edge-compute-minimal-mapper_cpp-in-docker): The C++ mapper, containerized
+- [edge-compute-minimal-mapper_python](https://github.com/auto-intern-skainet/edge-compute-minimal-mapper_python): Simple data mapper in Python
+- [edge-compute-minimal-aggregator_python](https://github.com/auto-intern-skainet/edge-compute-minimal-aggregator_python): Minimal data aggregator
+- [edge-compute-dummy-measurement_python](https://github.com/auto-intern-skainet/edge-compute-dummy-measurement_python): Dummy measurement source for testing without hardware
+
+## Optional
+
+- [GitHub organization](https://github.com/auto-intern-skainet): All Edge-Compute repositories
+- [Issue tracker](https://github.com/auto-intern-skainet/edge-compute-documentation/issues): Questions and bug reports
+- [Imprint](https://skainet.io/imprint/): Legal notice

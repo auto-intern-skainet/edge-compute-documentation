@@ -14,6 +14,47 @@ const config = {
   projectName: 'edge-compute-documentation',
   trailingSlash: false,
 
+  headTags: [
+    {
+      tagName: 'link',
+      attributes: {rel: 'llms-txt', type: 'text/plain', href: '/edge-compute-documentation/llms.txt'},
+    },
+    {
+      tagName: 'script',
+      attributes: {type: 'application/ld+json'},
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@graph': [
+          {
+            '@type': 'Organization',
+            '@id': 'https://www.auto-intern.de/#organization',
+            name: 'Auto-Intern GmbH',
+            url: 'https://www.auto-intern.de',
+            email: 'info@auto-intern.de',
+            logo: 'https://auto-intern-skainet.github.io/edge-compute-documentation/img/skainet-logo-weiss.png',
+            address: {'@type': 'PostalAddress', addressCountry: 'DE'},
+            sameAs: ['https://www.skainet.io', 'https://github.com/auto-intern-skainet'],
+          },
+          {
+            '@type': 'Brand',
+            '@id': 'https://www.skainet.io/#brand',
+            name: 'skAInet',
+            url: 'https://www.skainet.io',
+            logo: 'https://auto-intern-skainet.github.io/edge-compute-documentation/img/skainet-logo-weiss.png',
+          },
+          {
+            '@type': 'WebSite',
+            '@id': 'https://auto-intern-skainet.github.io/edge-compute-documentation/#website',
+            name: 'skAInet Edge-Compute',
+            url: 'https://auto-intern-skainet.github.io/edge-compute-documentation/',
+            publisher: {'@id': 'https://www.auto-intern.de/#organization'},
+            inLanguage: 'en',
+          },
+        ],
+      }),
+    },
+  ],
+
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 

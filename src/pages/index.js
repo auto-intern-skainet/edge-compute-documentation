@@ -3,6 +3,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import Layout from '@theme/Layout';
+import Head from '@docusaurus/Head';
 
 const features = [
   {
@@ -105,10 +106,49 @@ function LogoCarousel() {
   );
 }
 
+const productJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Product',
+  '@id': 'https://auto-intern-skainet.github.io/edge-compute-documentation/#product',
+  name: 'skAInet Edge-Compute',
+  alternateName: 'Edge-Compute v1.5',
+  description:
+    'Programmable M12-PoE switch, router, and compute module for industrial edge applications. Rugged anodized aluminum enclosure, sealed M12 connectors, operation under water up to 1 bar, 7 PoE LAN ports plus WAN, 8-core ARM CPU, 8 GB RAM, 32 GB eMMC, Yocto Linux with documented SBOM.',
+  image: [
+    'https://auto-intern-skainet.github.io/edge-compute-documentation/img/edge-in-use-2.jpg',
+    'https://auto-intern-skainet.github.io/edge-compute-documentation/img/edge-branded.jpg',
+    'https://auto-intern-skainet.github.io/edge-compute-documentation/img/edge-in-use-1.jpg',
+  ],
+  url: 'https://auto-intern-skainet.github.io/edge-compute-documentation/',
+  brand: {'@id': 'https://www.skainet.io/#brand'},
+  manufacturer: {'@id': 'https://www.auto-intern.de/#organization'},
+  category: 'Industrial edge computing / IIoT gateway',
+  countryOfOrigin: 'DE',
+  additionalProperty: [
+    {'@type': 'PropertyValue', name: 'CPU', value: '8-core 64-bit ARM @ 1.5 GHz'},
+    {'@type': 'PropertyValue', name: 'RAM', value: '8 GB LPDDR4-3200'},
+    {'@type': 'PropertyValue', name: 'Storage', value: '32 GB eMMC'},
+    {'@type': 'PropertyValue', name: 'LAN ports', value: '7 × M12 Ethernet with PoE Class 3'},
+    {'@type': 'PropertyValue', name: 'WAN ports', value: '1 × M12 Ethernet'},
+    {'@type': 'PropertyValue', name: 'Power input', value: '48–72 V DC via M12'},
+    {'@type': 'PropertyValue', name: 'Ingress protection', value: 'Sealed, operation under water up to 1 bar'},
+    {'@type': 'PropertyValue', name: 'Operating system', value: 'Yocto Linux with documented SBOM'},
+  ],
+  offers: {
+    '@type': 'Offer',
+    availability: 'https://schema.org/InStock',
+    url: 'mailto:info@auto-intern.de',
+    seller: {'@id': 'https://www.auto-intern.de/#organization'},
+  },
+};
+
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout description={siteConfig.tagline}>
+      <Head>
+        <script type="application/ld+json">{JSON.stringify(productJsonLd)}</script>
+      </Head>
       <header className="heroBanner">
         <div className="container">
           <div className="row row--align-center">
