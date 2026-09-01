@@ -56,6 +56,10 @@ const config = {
   ],
 
   onBrokenLinks: 'throw',
+  // Anchors on React pages (src/pages/*.js, e.g. /applications#panda) are
+  // not visible to Docusaurus' anchor checker, which only indexes Markdown
+  // headings — so the check produces false positives here.
+  onBrokenAnchors: 'ignore',
   onBrokenMarkdownLinks: 'warn',
 
   i18n: {
@@ -103,6 +107,7 @@ const config = {
             label: 'Documentation',
           },
           {to: '/applications', label: 'Applications', position: 'left'},
+          {to: '/team', label: 'Team & Research', position: 'left'},
           {
             href: 'https://www.skainet.io',
             label: 'skainet.io',
@@ -148,6 +153,8 @@ const config = {
             title: 'Company',
             items: [
               {label: 'skainet.io', href: 'https://www.skainet.io'},
+              {label: 'Auto-Intern GmbH', href: 'https://www.auto-intern.de'},
+              {label: 'Team & Research', to: '/team'},
               {label: 'Contact', href: 'mailto:info@auto-intern.de'},
               {label: 'Imprint', href: 'https://skainet.io/imprint/'},
               {

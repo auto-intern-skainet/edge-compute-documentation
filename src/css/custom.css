@@ -406,3 +406,60 @@
     margin-top: 1.5rem;
   }
 }
+
+/* Team & Research page */
+.teamCard {
+  height: 100%;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  background: var(--ifm-background-surface-color);
+}
+.teamCard h3 {
+  margin-bottom: 0.25rem;
+}
+.teamRole {
+  color: var(--ifm-color-primary);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.teamLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.teamLink {
+  font-size: 0.85rem;
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  color: var(--ifm-font-color-base);
+}
+.teamLink:hover {
+  border-color: var(--ifm-color-primary);
+  color: var(--ifm-color-primary);
+  text-decoration: none;
+}
+.pubIntro {
+  max-width: 760px;
+  color: var(--ifm-color-emphasis-700);
+}
+.pubList {
+  list-style: none;
+  padding: 0;
+}
+.pubItem {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+.pubItem:last-child {
+  border-bottom: none;
+}
+.pubMeta,
+.pubRelated {
+  font-size: 0.9rem;
+  color: var(--ifm-color-emphasis-700);
+}
+.pubSummary {
+  margin-top: 0.3rem;
+}

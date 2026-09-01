@@ -221,7 +221,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="platformSection">
+        <section className="platformSection" id="platform">
           <div className="container">
             <h2 className="text--center">The universal data acquisition and monitoring platform</h2>
             <p className="text--center platformLead">

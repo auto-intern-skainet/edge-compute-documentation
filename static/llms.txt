@@ -28,6 +28,11 @@ Key facts:
 
 - [Applications](https://auto-intern-skainet.github.io/edge-compute-documentation/applications): Six field deployments — DB Netz DIANA switch-point motor monitoring; Kelvion IR fouling detection on air-fin coolers; NexuFed AI + Ruhr-Universität Bochum federated pump condition monitoring; Global Point + Kurtz Ersa HORUS soldering process monitoring; RUB EP1 + GSI/FAIR PANDA luminosity detector control; Montana State University Center for Biofilm Engineering river water impedance spectroscopy
 
+## Team & Research
+
+- [Team & Research](https://auto-intern-skainet.github.io/edge-compute-documentation/team): The engineers behind the Edge-Compute (Odin Holmes, Stephan Bökelmann, René Glitza, Philipp Lehmann) and a curated list of their publications — federated learning for acoustic sensor networks (RUB IKA / NexuFed AI), electrochemical river biofilm sensing (MSU), PANDA collaboration papers (GSI/FAIR), and the autowerkstatt4null diagnostics ecosystem
+- [maxclerkwell.tech](https://maxclerkwell.tech): Stephan Bökelmann's blog on embedded, FPGA, and data-acquisition engineering
+
 ## Example code
 
 - [edge-compute-minimal-mapper_cpp](https://github.com/auto-intern-skainet/edge-compute-minimal-mapper_cpp): Simple data mapper in C++
