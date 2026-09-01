@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 title: Overview
+slug: /
 ---
 
 # skAInet Edge-Compute
@@ -31,10 +32,10 @@ and signaling.
 
 ## Where to go next
 
-- [Technical Specifications](./specifications) — compute, networking, and
+- [Technical Specifications](/docs/specifications) — compute, networking, and
   environmental specs at a glance
-- [Getting Started](./getting-started) — first connection and login
-- [Developing on the Edge-Compute](./development) — minimal mapper and
+- [Getting Started](/docs/getting-started) — first connection and login
+- [Developing on the Edge-Compute](/docs/development) — minimal mapper and
   aggregator examples in C++ and Python
 
 ## Questions?

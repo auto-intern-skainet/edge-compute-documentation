@@ -19,7 +19,7 @@ Key facts:
 
 ## Documentation
 
-- [Overview](https://edge-compute.skainet.io/docs/overview): What the Edge-Compute is and where to start
+- [Overview](https://edge-compute.skainet.io/docs): What the Edge-Compute is and where to start
 - [Technical Specifications](https://edge-compute.skainet.io/docs/specifications): Compute, networking, power, and environmental specs
 - [Getting Started](https://edge-compute.skainet.io/docs/getting-started): First connection, SSH access, default credentials, manufacturer key
 - [Networking Architecture](https://edge-compute.skainet.io/docs/networking): WAN/LAN layout, PoE ports
@@ -49,8 +49,13 @@ Key facts:
 - [edge-compute-minimal-aggregator_python](https://github.com/auto-intern-skainet/edge-compute-minimal-aggregator_python): Minimal data aggregator
 - [edge-compute-dummy-measurement_python](https://github.com/auto-intern-skainet/edge-compute-dummy-measurement_python): Dummy measurement source for testing without hardware
 
+## Contact & legal
+
+- [Contact](https://edge-compute.skainet.io/contact): Auto-Intern GmbH, Herner Str. 299, Gebäude B29, 44809 Bochum, Germany · info@auto-intern.de · +49 234 9345 1121 · technical support via GitHub Issues
+- [Imprint / Impressum](https://edge-compute.skainet.io/imprint): Managing director Odin Holmes · AG Bochum HRB 11927 · VAT ID DE220389702
+- [Privacy / Datenschutz](https://edge-compute.skainet.io/privacy): Static site on GitHub Pages, no cookies, no tracking, self-hosted fonts
+
 ## Optional
 
 - [GitHub organization](https://github.com/auto-intern-skainet): All Edge-Compute repositories
 - [Issue tracker](https://github.com/auto-intern-skainet/edge-compute-documentation/issues): Questions and bug reports
-- [Imprint](https://skainet.io/imprint/): Legal notice

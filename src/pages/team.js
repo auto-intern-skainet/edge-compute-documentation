@@ -17,6 +17,8 @@ const RUB = {
 const team = [
   {
     id: 'stephan-boekelmann',
+    // Canonical entity lives on his own domain; this page is one occurrence.
+    canonicalId: 'https://maxclerkwell.tech/#person',
     name: 'Stephan Bökelmann',
     givenName: 'Stephan',
     familyName: 'Bökelmann',
@@ -249,7 +251,7 @@ function personJsonLd(m) {
   const {jsonLd = {}} = m;
   return {
     '@type': 'Person',
-    '@id': `${SITE}/team#${m.id}`,
+    '@id': m.canonicalId || `${SITE}/team#${m.id}`,
     name: m.name,
     givenName: m.givenName,
     ...(jsonLd.additionalName ? {additionalName: jsonLd.additionalName} : {}),
@@ -288,7 +290,7 @@ const teamJsonLd = {
       '@id': ORG,
       name: 'Auto-Intern GmbH',
       url: 'https://www.auto-intern.de',
-      employee: team.map((m) => ({'@id': `${SITE}/team#${m.id}`})),
+      employee: team.map((m) => ({'@id': m.canonicalId || `${SITE}/team#${m.id}`})),
     },
     ...team.map(personJsonLd),
     ...publications.map((p) => ({

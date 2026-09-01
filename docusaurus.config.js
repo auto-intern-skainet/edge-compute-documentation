@@ -109,6 +109,7 @@ const config = {
           {to: '/devices', label: 'Devices', position: 'left'},
           {to: '/applications', label: 'Applications', position: 'left'},
           {to: '/team', label: 'Team & Research', position: 'left'},
+          {to: '/contact', label: 'Contact', position: 'left'},
           {
             href: 'https://www.skainet.io',
             label: 'skainet.io',
@@ -157,8 +158,9 @@ const config = {
               {label: 'skainet.io', href: 'https://www.skainet.io'},
               {label: 'Auto-Intern GmbH', href: 'https://www.auto-intern.de'},
               {label: 'Team & Research', to: '/team'},
-              {label: 'Contact', href: 'mailto:info@auto-intern.de'},
-              {label: 'Imprint', href: 'https://skainet.io/imprint/'},
+              {label: 'Contact', to: '/contact'},
+              {label: 'Imprint / Impressum', to: '/imprint'},
+              {label: 'Privacy / Datenschutz', to: '/privacy'},
               {
                 label: 'GitHub Issues',
                 href: 'https://github.com/auto-intern-skainet/edge-compute-documentation/issues',
@@ -166,7 +168,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Auto-Intern GmbH, Germany. · <a href="https://skainet.io/imprint/">Imprint</a>`,
+        copyright: `Copyright © ${new Date().getFullYear()} Auto-Intern GmbH, Herner Str. 299, 44809 Bochum, Germany · <a href="/imprint">Imprint</a> · <a href="/privacy">Privacy</a> · <a href="/contact">Contact</a>`,
       },
       prism: {
         additionalLanguages: ['bash'],

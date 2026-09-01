@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://edge-compute.skainet.io/sitemap.xml
+
+# Machine-readable summaries for LLM crawlers
+# https://edge-compute.skainet.io/llms.txt
+# https://edge-compute.skainet.io/llms-full.txt

@@ -373,7 +373,7 @@ export default function Home() {
               <Link className="button button--primary button--lg" href="mailto:info@auto-intern.de?subject=skAInet%20Edge-Compute">
                 Talk to Us
               </Link>
-              <Link className="button button--secondary button--outline button--lg" to="/docs/overview">
+              <Link className="button button--secondary button--outline button--lg" to="/docs">
                 Read the Docs
               </Link>
             </div>
