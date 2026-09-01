@@ -1,5 +1,6 @@
 import Link from '@docusaurus/Link';
 import Layout from '@theme/Layout';
+import Head from '@docusaurus/Head';
 
 const devices = [
   {
@@ -99,11 +100,36 @@ function Device({d}) {
   );
 }
 
+const devicesJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'skAInet PoE Measurement Devices',
+  itemListElement: devices.map((d, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    item: {
+      '@type': 'Product',
+      '@id': `https://auto-intern-skainet.github.io/edge-compute-documentation/devices#${d.id}`,
+      name: d.name,
+      category: d.category,
+      description: d.text,
+      brand: {'@id': 'https://www.skainet.io/#brand'},
+      manufacturer: {'@id': 'https://www.auto-intern.de/#organization'},
+      isAccessoryOrSparePartFor: {
+        '@id': 'https://auto-intern-skainet.github.io/edge-compute-documentation/#product',
+      },
+    },
+  })),
+};
+
 export default function Devices() {
   return (
     <Layout
       title="PoE Measurement Devices"
       description="Downstream connector boxes and measurement devices for the skAInet Edge-Compute: power, temperature, digital I/O, IO-Link, impedance spectroscopy, infrared, and signaling.">
+      <Head>
+        <script type="application/ld+json">{JSON.stringify(devicesJsonLd)}</script>
+      </Head>
       <header className="pageHero">
         <div className="container">
           <h1>PoE Measurement Devices</h1>

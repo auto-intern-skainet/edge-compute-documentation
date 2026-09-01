@@ -8,6 +8,7 @@ const sidebars = {
     'getting-started',
     'networking',
     'development',
+    'tech-stack',
     'power-and-mounting',
     'recovery',
   ],

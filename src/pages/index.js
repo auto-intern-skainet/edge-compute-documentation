@@ -135,7 +135,9 @@ const productJsonLd = {
     {'@type': 'PropertyValue', name: 'Operating system', value: 'Yocto Linux with documented SBOM'},
   ],
   offers: {
-    '@type': 'Offer',
+    '@type': 'AggregateOffer',
+    lowPrice: '299',
+    priceCurrency: 'USD',
     availability: 'https://schema.org/InStock',
     url: 'mailto:info@auto-intern.de',
     seller: {'@id': 'https://www.auto-intern.de/#organization'},
@@ -177,6 +179,12 @@ export default function Home() {
                   Technical Specifications
                 </Link>
               </div>
+              <p className="heroPrice">
+                Starting from <strong>$299</strong> ·{' '}
+                <a href="mailto:info@auto-intern.de?subject=skAInet%20Edge-Compute%20quote">
+                  request a quote
+                </a>
+              </p>
             </div>
             <div className="col col--6">
               <img

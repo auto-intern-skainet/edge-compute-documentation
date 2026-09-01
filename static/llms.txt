@@ -13,6 +13,9 @@ Key facts:
 - Upstream APIs: REST, WebSocket, Webhooks, MQTT, OPC UA, Modbus-TCP, EPICS, gRPC, AMQP, CoAP, SNMP, Prometheus, InfluxDB, SFTP/rsync
 - Security model: data is filtered and analyzed on the edge; no raw data reaches the upstream network unless configured
 - Power: recommended ≥ 100 W PSU; minimum 25 W without PoE loads
+- Price: starting from $299 — quotes via info@auto-intern.de
+- Tech stack: KiCad, build123d, HLH Prototypes (enclosures), GH Electronics (M12 PoE cables), NextPCB (PCBA); Yocto Linux, NetBird (optional remote access), Redis, Docker, Crow (C++ APIs), Angular; optional external Ceph, Kubernetes, Ollama; EPICS and Modbus TCP integration
+- Machine-readable full text of every page: https://auto-intern-skainet.github.io/edge-compute-documentation/llms-full.txt — sitemap: https://auto-intern-skainet.github.io/edge-compute-documentation/sitemap.xml
 
 ## Documentation
 
@@ -21,6 +24,7 @@ Key facts:
 - [Getting Started](https://auto-intern-skainet.github.io/edge-compute-documentation/docs/getting-started): First connection, SSH access, default credentials, manufacturer key
 - [Networking Architecture](https://auto-intern-skainet.github.io/edge-compute-documentation/docs/networking): WAN/LAN layout, PoE ports
 - [Developing on the Edge-Compute](https://auto-intern-skainet.github.io/edge-compute-documentation/docs/development): Mapper/aggregator pattern and minimal example repositories in C++ and Python
+- [Tech Stack](https://auto-intern-skainet.github.io/edge-compute-documentation/docs/tech-stack): Hardware (KiCad, build123d, HLH Prototypes enclosures, GH Electronics certified M12 PoE cables, NextPCB PCBA), system (Yocto Linux, NetBird remote access, Redis, Docker, CrowCpp APIs, Angular frontends), optional external integrations (Ceph storage, Kubernetes analytics, Ollama insights), and protocols (EPICS for experimental physics, Modbus TCP for plant networks)
 - [Power & Mounting](https://auto-intern-skainet.github.io/edge-compute-documentation/docs/power-and-mounting): Power supply requirements and mounting drawing
 - [Recovery & Maintenance](https://auto-intern-skainet.github.io/edge-compute-documentation/docs/recovery): Reflashing the base image, serial console access
 

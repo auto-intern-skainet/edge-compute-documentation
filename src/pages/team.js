@@ -1,5 +1,6 @@
 import Link from '@docusaurus/Link';
 import Layout from '@theme/Layout';
+import Head from '@docusaurus/Head';
 import {publications} from '../data/publications';
 
 // `primary` is the profile the name links to; `links` are secondary chips.
@@ -153,11 +154,26 @@ function Publication({p}) {
   );
 }
 
+const teamJsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': team.map((m) => ({
+    '@type': 'Person',
+    name: m.name,
+    jobTitle: m.role,
+    url: m.primary.href,
+    sameAs: m.links.map((l) => l.href),
+    worksFor: {'@id': 'https://www.auto-intern.de/#organization'},
+  })),
+};
+
 export default function Team() {
   return (
     <Layout
       title="Team & Research"
       description="The engineers behind the skAInet Edge-Compute, and the research it grew out of.">
+      <Head>
+        <script type="application/ld+json">{JSON.stringify(teamJsonLd)}</script>
+      </Head>
       <header className="pageHero">
         <div className="container">
           <h1>Team &amp; Research</h1>
