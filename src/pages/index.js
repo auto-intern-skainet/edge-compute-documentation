@@ -172,13 +172,18 @@ export default function Home() {
                 , Germany.
               </p>
               <div className="heroButtons">
-                <Link className="button button--primary button--lg" to="/docs/getting-started">
+                <Link
+                  className="button button--primary button--lg"
+                  href="mailto:info@auto-intern.de?subject=skAInet%20Edge-Compute">
+                  Contact Us
+                </Link>
+                <Link className="button button--secondary button--outline button--lg" to="/docs/getting-started">
                   Get Started
                 </Link>
-                <Link className="button button--secondary button--outline button--lg" to="/docs/specifications">
-                  Technical Specifications
-                </Link>
               </div>
+              <Link className="heroSecondaryLink" to="/docs/specifications">
+                Technical specifications →
+              </Link>
               <p className="heroPrice">
                 Starting from <strong>$299</strong> ·{' '}
                 <a href="mailto:info@auto-intern.de?subject=skAInet%20Edge-Compute%20quote">

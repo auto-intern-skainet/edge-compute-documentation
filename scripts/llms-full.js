@@ -41,7 +41,11 @@ function extract(html) {
   let body = html;
   const articleStart = body.search(/<article/);
   const heroStart = body.search(/<header class="(pageHero|heroBanner)/);
-  if (articleStart !== -1) body = body.slice(articleStart).replace(/<\/article>[\s\S]*$/, '');
+  if (articleStart !== -1) {
+    body = body.slice(articleStart).replace(/<\/article>[\s\S]*$/, '');
+    const h1 = body.search(/<h1/);
+    if (h1 !== -1) body = body.slice(h1); // skip breadcrumbs and mobile TOC
+  }
   else if (heroStart !== -1) body = body.slice(heroStart);
   body = body.replace(/<footer[\s\S]*$/, '');
   // Drop the "Edit this page" / pagination chrome of docs pages.
@@ -59,6 +63,7 @@ function extract(html) {
     .replace(/<br\s*\/?>/g, '\n')
     .replace(/<[^>]+>/g, ' ');
   body = decode(body)
+    .replace(/[\u200b\u200c]/g, '')
     .replace(/[ \t]+/g, ' ')
     .replace(/ *\n */g, '\n')
     .replace(/\n{3,}/g, '\n\n')

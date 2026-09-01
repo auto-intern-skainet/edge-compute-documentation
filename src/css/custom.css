@@ -1,39 +1,39 @@
 /**
- * skAInet brand styling, matched to skainet.io:
- * accent blue #0089F7, dark grey #262626, font "Biryani".
+ * skAInet brand styling:
+ * logo red #E83D3A as primary, dark grey #262626, font "Biryani".
  */
 @import url('https://fonts.googleapis.com/css2?family=Biryani:wght@400;600;700;800&display=swap');
 
 :root {
-  --ifm-color-primary: #0089f7;
-  --ifm-color-primary-dark: #007bde;
-  --ifm-color-primary-darker: #0074d2;
-  --ifm-color-primary-darkest: #0060ad;
-  --ifm-color-primary-light: #1094ff;
-  --ifm-color-primary-lighter: #1d9aff;
-  --ifm-color-primary-lightest: #42abff;
+  --ifm-color-primary: #e83d3a;
+  --ifm-color-primary-dark: #dc2c29;
+  --ifm-color-primary-darker: #cf2926;
+  --ifm-color-primary-darkest: #ab2220;
+  --ifm-color-primary-light: #eb4f4c;
+  --ifm-color-primary-lighter: #ec5855;
+  --ifm-color-primary-lightest: #f07d7b;
   --ifm-font-family-base: 'Biryani', -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue',
     sans-serif;
   --ifm-navbar-background-color: #262626;
   --ifm-navbar-link-color: #ffffff;
-  --ifm-navbar-link-hover-color: #42abff;
+  --ifm-navbar-link-hover-color: #f07d7b;
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 137, 247, 0.1);
+  --docusaurus-highlighted-code-line-bg: rgba(232, 61, 58, 0.1);
   --skainet-dark: #262626;
   --skainet-dark-2: #32373c;
 }
 
 [data-theme='dark'] {
-  --ifm-color-primary: #42abff;
-  --ifm-color-primary-dark: #1d9aff;
-  --ifm-color-primary-darker: #1094ff;
-  --ifm-color-primary-darkest: #0079db;
-  --ifm-color-primary-light: #67bcff;
-  --ifm-color-primary-lighter: #79c4ff;
-  --ifm-color-primary-lightest: #b0dcff;
+  --ifm-color-primary: #f06462;
+  --ifm-color-primary-dark: #ed4b48;
+  --ifm-color-primary-darker: #eb3f3c;
+  --ifm-color-primary-darkest: #d92522;
+  --ifm-color-primary-light: #f37d7b;
+  --ifm-color-primary-lighter: #f48987;
+  --ifm-color-primary-lightest: #f8b1b0;
   --ifm-background-color: #1d1f21;
-  --docusaurus-highlighted-code-line-bg: rgba(66, 171, 255, 0.15);
+  --docusaurus-highlighted-code-line-bg: rgba(240, 100, 98, 0.15);
 }
 
 /* Dark navbar in both color modes — matches the skainet.io header */
@@ -55,7 +55,7 @@
 
 /* Hero */
 .heroBanner {
-  background: linear-gradient(160deg, #262626 0%, #32373c 60%, #0d3a5c 100%);
+  background: linear-gradient(160deg, #262626 0%, #32373c 60%, #4a1615 100%);
   --ifm-font-color-base: #ffffff;
   color: #ffffff;
   padding: 5rem 1rem;
@@ -91,7 +91,39 @@
   font-size: 1.3rem;
 }
 .heroPrice a {
-  color: #42abff;
+  color: #f07d7b;
+}
+
+/* Call-to-action buttons: bold, raised, red */
+.button--primary {
+  font-weight: 700;
+  border: none;
+  box-shadow: 0 6px 20px rgba(232, 61, 58, 0.45);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+}
+.button--primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(232, 61, 58, 0.55);
+}
+.button--lg {
+  padding: 0.9rem 1.8rem;
+  font-size: 1.05rem;
+}
+.heroButtons .button--outline {
+  transition: transform 0.15s ease, background-color 0.15s ease, color 0.15s ease;
+}
+.heroButtons .button--outline:hover {
+  transform: translateY(-2px);
+}
+.heroSecondaryLink {
+  display: block;
+  margin-top: 0.75rem;
+  color: #d9d9d9;
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.35);
+}
+.heroSecondaryLink:hover {
+  color: #ffffff;
 }
 
 /* Outline buttons sit on dark backgrounds — keep them white */
@@ -118,7 +150,7 @@
 }
 .featureCard:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(0, 137, 247, 0.15);
+  box-shadow: 0 8px 24px rgba(232, 61, 58, 0.18);
 }
 .featureCard h3 {
   color: var(--ifm-color-primary);
@@ -139,7 +171,7 @@
 .specStrip .specValue {
   font-size: 2rem;
   font-weight: 800;
-  color: #42abff;
+  color: #f07d7b;
   display: block;
 }
 .specStrip .specLabel {
@@ -337,12 +369,12 @@
   text-decoration-color: rgba(255, 255, 255, 0.5);
 }
 .heroCompanyLink:hover {
-  color: #42abff;
+  color: #f07d7b;
 }
 
 /* Applications page */
 .pageHero {
-  background: linear-gradient(160deg, #262626 0%, #32373c 60%, #0d3a5c 100%);
+  background: linear-gradient(160deg, #262626 0%, #32373c 60%, #4a1615 100%);
   color: #ffffff;
   padding: 3.5rem 1rem;
   text-align: center;
@@ -505,7 +537,7 @@
 }
 .deviceCard:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 24px rgba(0, 137, 247, 0.15);
+  box-shadow: 0 8px 24px rgba(232, 61, 58, 0.18);
 }
 .deviceHeader {
   display: flex;
