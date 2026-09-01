@@ -331,6 +331,10 @@ export default {
       'philipp-lehmann':
         'Philipp looks after the security side of the Edge-Compute — the hardened Yocto Linux image, its documented SBOM, and the network architecture that keeps raw data on the LAN side unless you decide otherwise.',
     },
+    notes: {
+      'stephan-boekelmann':
+        'Also known as Stephan Boekelmann, MaxClerkwell, 施泓杰 — not the actor Stefan Bockelmann, not the UK agency ClerksWell.',
+    },
     closer: {
       title: 'Want to work with us?',
       text: 'Whether you are a company with a measurement problem or a research group with a detector to control — we would like to hear from you.',

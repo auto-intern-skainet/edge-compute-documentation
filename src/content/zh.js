@@ -330,6 +330,10 @@ export default {
       'philipp-lehmann':
         'Philipp 负责 Edge-Compute 的安全事务——经过加固的 Yocto Linux 镜像、有据可查的 SBOM，以及确保原始数据始终留在 LAN 侧（除非您另有决定）的网络架构。',
     },
+    notes: {
+      'stephan-boekelmann':
+        '亦称 Stephan Boekelmann、MaxClerkwell、施泓杰——并非演员 Stefan Bockelmann，亦与英国机构 ClerksWell 无关。',
+    },
     closer: {
       title: '想与我们合作？',
       text: '无论您是面临测量难题的企业，还是需要控制探测器的科研团队——我们都期待您的来信。',

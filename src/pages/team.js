@@ -38,8 +38,13 @@ const team = [
       {label: 'ResearchGate', href: 'https://www.researchgate.net/profile/Stephan-Boekelmann'},
       {label: 'INSPIRE', href: 'https://inspirehep.net/authors/2177110'},
       {label: 'arXiv', href: 'https://arxiv.org/a/0000-0002-2119-0064.html'},
+      {label: 'THGA', href: 'https://www.thga.de/hochschule/personen/profile-wissenschaftliche-mitarbeitende/stephan-boekelmann'},
+      {label: 'nabla B', href: 'https://nabla-b.engineering/'},
     ],
     jsonLd: {
+      alternateName: ['Stephan Boekelmann', 'MaxClerkwell', '施泓杰'],
+      disambiguatingDescription:
+        'Engineer and physicist in Bochum, Germany (Auto-Intern GmbH / skAInet, nabla B, Ruhr-Universität Bochum), known online as MaxClerkwell. Not the actor Stefan Bockelmann, and not related to the UK agency ClerksWell.',
       jobTitle: ['System Architect', 'Chief Operating Officer'],
       identifier: [
         {'@type': 'PropertyValue', propertyID: 'ORCID', value: '0000-0002-2119-0064'},
@@ -196,6 +201,7 @@ function personJsonLd(m) {
     ...(jsonLd.alternateName ? {alternateName: jsonLd.alternateName} : {}),
     jobTitle: jsonLd.jobTitle || m.role,
     description: m.description,
+    ...(jsonLd.disambiguatingDescription ? {disambiguatingDescription: jsonLd.disambiguatingDescription} : {}),
     ...(m.photo ? {image: `${SITE}${m.photo}`} : {}),
     url: m.primary.href,
     mainEntityOfPage: `${SITE}/team`,
@@ -269,6 +275,7 @@ function Member({m, t}) {
           </h3>
           <p className="teamRole">{t.roles[m.id]}</p>
           <p>{t.bios[m.id]}</p>
+          {t.notes && t.notes[m.id] && <p className="teamNote">{t.notes[m.id]}</p>}
           <div className="teamLinks">
             <a className="teamLink teamLink--primary" href={m.primary.href}>
               {m.primary.label}

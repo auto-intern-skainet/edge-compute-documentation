@@ -331,6 +331,10 @@ export default {
       'philipp-lehmann':
         'Philipp verantwortet die Sicherheitsseite des Edge-Compute – das gehärtete Yocto-Linux-Image, dessen dokumentierte SBOM und die Netzwerkarchitektur, die Rohdaten auf der LAN-Seite hält, sofern Sie nichts anderes entscheiden.',
     },
+    notes: {
+      'stephan-boekelmann':
+        'Auch bekannt als Stephan Boekelmann, MaxClerkwell, 施泓杰 – nicht der Schauspieler Stefan Bockelmann, nicht die britische Agentur ClerksWell.',
+    },
     closer: {
       title: 'Möchten Sie mit uns zusammenarbeiten?',
       text: 'Ob Sie ein Unternehmen mit einem Messproblem oder eine Forschungsgruppe mit einem zu steuernden Detektor sind – wir freuen uns, von Ihnen zu hören.',
