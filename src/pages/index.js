@@ -70,6 +70,8 @@ const customers = [
   {name: 'RAG', file: 'rag.svg'},
   {name: 'Montana State University', file: 'msu.svg'},
   {name: 'GSI / FAIR', file: 'gsi.svg'},
+  {name: 'NexuFed AI', file: 'nexufed.png'},
+  {name: 'Ruhr-Universität Bochum', file: 'rub.svg'},
 ];
 
 function LogoCarousel() {
@@ -82,8 +84,8 @@ function LogoCarousel() {
           Trusted in the field
         </h2>
         <p className="text--center customerSubtitle">
-          Companies and research institutions already running skAInet
-          Edge-Compute technology
+          Companies, research institutions, and partners already running
+          skAInet Edge-Compute technology
         </p>
       </div>
       <div className="logoMarquee" aria-label="Customer logos">

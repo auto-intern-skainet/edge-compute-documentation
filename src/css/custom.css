@@ -266,7 +266,7 @@
   display: flex;
   gap: 2rem;
   width: max-content;
-  animation: logoScroll 40s linear infinite;
+  animation: logoScroll 50s linear infinite;
 }
 .logoMarquee:hover .logoTrack {
   animation-play-state: paused;
@@ -300,8 +300,8 @@
     transform: translateX(0);
   }
   to {
-    /* one full copy of the list: 7 cards × 220px + 7 gaps × 2rem */
-    transform: translateX(calc(-7 * (220px + 2rem)));
+    /* one full copy of the list: 9 cards × 220px + 9 gaps × 2rem */
+    transform: translateX(calc(-9 * (220px + 2rem)));
   }
 }
 @media (prefers-reduced-motion: reduce) {
@@ -312,7 +312,7 @@
     width: auto;
     padding: 0 1rem;
   }
-  .logoTrack .logoCard:nth-child(n + 8) {
+  .logoTrack .logoCard:nth-child(n + 10) {
     display: none;
   }
 }
