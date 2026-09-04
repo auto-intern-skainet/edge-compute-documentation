@@ -5,7 +5,7 @@ title: 技术栈
 
 # 技术栈
 
-skAInet Edge-Compute 的设计、制造与运行所依赖的工具。只要存在开放的工具与开放的格式，我们就优先采用——这样，运行在您 Edge-Compute 上的一切都可审查，您在其上构建的一切都可移植。
+skAInet Edge-Compute 的设计、构建与运行所采用的技术与工具。我们优先选择开放工具和开放格式——只要有合适的选择——让您能够了解并审视 Edge-Compute 上运行的一切，同时确保您在其上构建的内容具备良好的可移植性。
 
 ## 硬件设计与制造
 
@@ -22,13 +22,13 @@ skAInet Edge-Compute 的设计、制造与运行所依赖的工具。只要存�
 | | 工具 | 用途 |
 |---|---|---|
 | 🐧 | [Yocto Project](https://www.yoctoproject.org/) | Linux 发行版——可复现的镜像，附带有据可查的 SBOM，符合欧盟《网络弹性法案》 |
-| 🔐 | [NetBird](https://netbird.io/) | 基于 WireGuard 的安全远程访问，用于维护与技术支持*（可选）* |
+| 🔐 | [NetBird](https://netbird.io/) | 基于 WireGuard 的安全远程访问，用于维护与技术支持 *（可选）* |
 | 🚏 | [Redis](https://redis.io/) | 设备内部的数据传输——测量数据流通过 Redis 在映射器、聚合器与 API 之间流转 |
 | 🐳 | [Docker](https://www.docker.com/) | 边缘端分析的部署单元；您的分析程序以容器形式交付 |
 | ⚡ | [Crow](https://crowcpp.org/) | 高性能 C++ Web 框架，用于设备的 REST 与 WebSocket API |
 | 🅰️ | [Angular](https://angular.dev/) | 直接由 Edge-Compute 提供的前端界面 |
 
-## 外部集成*（可选）*
+## 外部集成 *（可选）*
 
 Edge-Compute 可独立运行。接入上游基础设施后，它可与以下系统集成：
 

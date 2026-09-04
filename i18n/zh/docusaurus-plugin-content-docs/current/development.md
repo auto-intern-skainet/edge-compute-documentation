@@ -8,8 +8,8 @@ title: 在 Edge-Compute 上开发
 Edge-Compute 运行完整的 Linux 系统，您可以通过 SSH 访问，并像使用任何嵌入式 Linux 设备一样使用它。典型的工作模式如下：
 
 1. LAN 端口上的**测量设备**产生数据。
-2. Edge-Compute 上的**映射器（mapper）**接收、解码并转换这些数据。
-3. **聚合器（aggregator）**汇总结果，并将其转发到您网络中的上层。
+2. Edge-Compute 上的**映射器**（mapper）接收、解码并转换这些数据。
+3. **聚合器**（aggregator）汇总结果，并将其转发到您网络中的上层。
 
 ## 最小示例
 
