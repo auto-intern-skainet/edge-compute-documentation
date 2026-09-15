@@ -4,7 +4,7 @@
 const config = {
   title: 'skAInet Edge-Compute',
   tagline:
-    'Programmable M12-PoE switch, router, and compute module for industrial edge applications.',
+    'Secure on-prem edge computing for harsh industrial plants: programmable M12-PoE switch, router, and compute module in an IP67 aluminum enclosure.',
   favicon: 'img/favicon.png',
 
   url: 'https://edge-compute.skainet.io',

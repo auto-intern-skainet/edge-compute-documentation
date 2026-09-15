@@ -43,6 +43,9 @@ Schwächer dimensionierte Netzteile können funktionieren – jedoch auf eigenes
 
 ## Umgebungsbedingungen
 
+Ausgelegt für raue Industrieumgebungen – Staub, Feuchtigkeit, Vibration und
+Untertauchen:
+
 | | |
 |---|---|
 | Gehäuse | Eloxiertes Aluminium, stoßfest |

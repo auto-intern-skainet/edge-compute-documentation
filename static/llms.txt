@@ -1,6 +1,6 @@
 # skAInet Edge-Compute
 
-> Programmable M12-PoE switch, router, and compute module for industrial edge applications, made by Auto-Intern GmbH, Germany. Rugged anodized aluminum enclosure, fully sealed M12 connectors, operation under water up to 1 bar, 48–72 V DC input, 7 PoE LAN ports plus 1 WAN port, 8-core 64-bit ARM CPU, 8 GB RAM, 32 GB eMMC. Runs Yocto Linux with a documented SBOM (Cyber Resilience Act aligned). Version v1.5.
+> Secure on-prem edge compute node for harsh plant environments: programmable M12-PoE switch, router, and compute module for industrial edge applications, made by Auto-Intern GmbH, Germany. Rugged anodized aluminum enclosure, fully sealed M12 connectors, operation under water up to 1 bar, 48–72 V DC input, 7 PoE LAN ports plus 1 WAN port, 8-core 64-bit ARM CPU, 8 GB RAM, 32 GB eMMC. Runs Yocto Linux with a documented SBOM (Cyber Resilience Act aligned). Version v1.5.
 
 This site is the product documentation and marketing site for the skAInet Edge-Compute. It is generated with Docusaurus and hosted on GitHub Pages. Source: https://github.com/auto-intern-skainet/edge-compute-documentation
 
@@ -13,7 +13,7 @@ Key facts:
 - Networking: WAN (eth1, DHCP client) + LAN (eth0, DHCP server, internal 8-port switch, 7 external M12 PoE+ (IEEE 802.3at) ports)
 - Default LAN: 192.168.199.1, SSH port 22022
 - Upstream APIs: REST, WebSocket, Webhooks, MQTT, OPC UA, Modbus-TCP, EPICS, gRPC, AMQP, CoAP, SNMP, Prometheus, InfluxDB, SFTP/rsync
-- Security model: data is filtered and analyzed on the edge; no raw data reaches the upstream network unless configured
+- Security model: on-premises by design — data is filtered and analyzed on the edge; no raw data reaches the upstream network or any cloud unless configured
 - Power: recommended ≥ 100 W PSU; minimum 25 W without PoE loads
 - Price: starting from 260 EUR / 299 USD (net) — quotes via info@auto-intern.de
 - Tech stack: KiCad, build123d, HLH Prototypes (enclosures), GH Electronics (M12 PoE cables), NextPCB (PCBA); Yocto Linux, NetBird (optional remote access), Redis, Docker, Crow (C++ APIs), Angular; optional external Ceph, Kubernetes, Ollama; EPICS and Modbus TCP integration

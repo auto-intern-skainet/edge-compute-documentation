@@ -43,6 +43,9 @@ Lower-rated supplies may work, but at your own risk.
 
 ## Environmental
 
+Designed for harsh plant environments — dust, humidity, vibration, and
+submersion:
+
 | | |
 |---|---|
 | Enclosure | Anodized aluminum, shockproof |

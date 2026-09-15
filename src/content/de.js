@@ -14,9 +14,9 @@ export default {
 
   index: {
     metaDescription:
-      'Programmierbarer M12-PoE-Switch, Router und Compute-Modul für industrielle Edge-Anwendungen.',
+      'Sichere On-Premises-Edge für raue Industrieumgebungen: programmierbarer M12-PoE-Switch, Router und Compute-Modul im IP67-Aluminiumgehäuse.',
     heroTitle: 'Edge-Compute',
-    taglinePre: 'Der programmierbare M12-PoE-Switch, Router und Compute-Modul für industrielle Edge-Anwendungen – von ',
+    taglinePre: 'Die sichere On-Premises-Edge für raue Anlagen: programmierbarer M12-PoE-Switch, Router und Compute-Modul für industrielle Edge-Anwendungen – von ',
     company: 'Auto-Intern GmbH',
     taglinePost: ', Deutschland.',
     specsLink: 'Technische Daten →',
@@ -39,8 +39,8 @@ export default {
     features: [
       {
         icon: '🌊',
-        title: 'Robust & wasserdicht',
-        text: 'Gehäuse aus eloxiertem Aluminium, vollständig abgedichtete M12-Steckverbinder. Stoßfest und für den Betrieb unter Wasser bis 1 bar ausgelegt.',
+        title: 'Robust für raue Industrieumgebungen',
+        text: 'Gehäuse aus eloxiertem Aluminium, vollständig abgedichtete M12-Steckverbinder, IP67. Stoßfest, staub- und feuchtigkeitsgeschützt und für den Betrieb unter Wasser bis 1 bar ausgelegt.',
       },
       {
         icon: '🔌',
@@ -87,10 +87,10 @@ export default {
           ],
         },
         {
-          title: 'Ihre Daten, Ihre Regeln',
+          title: 'Ihre Daten bleiben on-premises',
           paras: [
             'Der Edge-Compute sammelt, pollt und empfängt Informationen von Sensoren, SPSen, Rechnern und allen anderen netzwerkfähigen Geräten. Dank zweier getrennter Ethernet-Schnittstellen werden die Daten an der Edge gefiltert und auf leistungsfähigen Prozessoren analysiert, bevor sie das Gerät verlassen.',
-            'Dank der modernen Sicherheitsarchitektur gelangen keine Rohdaten in Ihr übergeordnetes Netzwerk – es sei denn, Sie wollen es so.',
+            'Dank der modernen Sicherheitsarchitektur läuft alles on-premises: Keine Rohdaten gelangen in Ihr übergeordnetes Netzwerk oder in eine Cloud – es sei denn, Sie wollen es so.',
           ],
         },
       ],
@@ -99,8 +99,8 @@ export default {
       andMore: 'und mehr',
     },
     gallery: {
-      title: 'Gebaut für den Einsatz vor Ort',
-      subtitle: 'Ein massiver Block aus eloxiertem Aluminium. Jeder Port abgedichtet. Bereit für Ihr Rack, Ihre Maschine oder Ihren Tank.',
+      title: 'Gebaut für raue Anlagen',
+      subtitle: 'Ein massiver Block aus eloxiertem Aluminium. Jeder Port abgedichtet. Bereit für Ihr Rack, Ihre Maschine oder Ihren Tank – auch in den rauesten Industrieumgebungen.',
       figures: [
         {
           alt: 'Frontplatte des Edge-Compute mit beschrifteten Ports neben dem geöffneten Gehäuse mit Compute-Modul',
@@ -116,7 +116,7 @@ export default {
     },
     closer: {
       title: 'Bringen Sie Rechenleistung zu Ihren Messungen.',
-      text: 'Ob Sie einen einzelnen Sensor anbinden oder eine ganze Anlage instrumentieren: Der skAInet Edge-Compute bietet Ihnen eine robuste, sichere und offene Plattform, die sich im Einsatz bereits bewährt hat. Sagen Sie uns, was Sie messen möchten – wir sagen Ihnen, wie Sie dorthin kommen.',
+      text: 'Ob Sie einen einzelnen Sensor anbinden oder eine ganze Anlage instrumentieren: Der skAInet Edge-Compute bietet Ihnen eine robuste, sichere On-Premises-Edge-Plattform, die offen ist und sich im Einsatz bereits bewährt hat. Sagen Sie uns, was Sie messen möchten – wir sagen Ihnen, wie Sie dorthin kommen.',
     },
   },
 

@@ -11,8 +11,9 @@ slug: /
 ![skAInet Edge-Compute mit angeschlossenen M12-Kabeln](/img/edge-in-use-2.jpg)
 
 Der **skAInet Edge-Compute** ist ein programmierbarer M12-PoE-Switch, Router und
-Compute-Modul für industrielle Edge-Anwendungen – ein robuster Rechenknoten in
-einem Gehäuse aus eloxiertem Aluminium.
+Compute-Modul für industrielle Edge-Anwendungen – ein sicherer On-Premises-
+Edge-Knoten in einem robusten IP67-Gehäuse aus eloxiertem Aluminium für raue
+Industrieumgebungen.
 
 - **Wasserdichte und stoßfeste** Bauweise
 - Betrieb mit **48–72 V DC** über M12-Stromanschluss

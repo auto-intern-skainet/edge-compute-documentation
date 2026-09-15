@@ -14,9 +14,9 @@ export default {
 
   index: {
     metaDescription:
-      'Programmable M12-PoE switch, router, and compute module for industrial edge applications.',
+      'Secure on-prem edge computing for harsh industrial plants: programmable M12-PoE switch, router, and compute module in an IP67 aluminum enclosure.',
     heroTitle: 'Edge-Compute',
-    taglinePre: 'The programmable M12-PoE switch, router, and compute module for industrial edge applications — by ',
+    taglinePre: 'The secure on-prem edge for harsh plants: programmable M12-PoE switch, router, and compute module for industrial edge applications — by ',
     company: 'Auto-Intern GmbH',
     taglinePost: ', Germany.',
     specsLink: 'Technical specifications →',
@@ -39,8 +39,8 @@ export default {
     features: [
       {
         icon: '🌊',
-        title: 'Rugged & Waterproof',
-        text: 'Anodized aluminum enclosure, fully sealed M12 connectors. Shockproof and rated for operation under water up to 1 bar.',
+        title: 'Rugged for harsh plant floors',
+        text: 'Anodized aluminum enclosure, fully sealed M12 connectors, IP67. Shockproof, dust- and humidity-proof, and rated for operation under water up to 1 bar.',
       },
       {
         icon: '🔌',
@@ -87,10 +87,10 @@ export default {
           ],
         },
         {
-          title: 'Your data, your rules',
+          title: 'Your data stays on-prem',
           paras: [
             'The Edge-Compute collects, polls, and receives information from sensors, PLCs, computers, and any other network-enabled device. With two separated Ethernet interfaces, data is filtered on the edge and analyzed on powerful processors before it goes anywhere.',
-            'Thanks to the modern security architecture, no raw data reaches your upstream network unless you want it to.',
+            'Thanks to the modern security architecture, everything runs on-premises: no raw data reaches your upstream network or any cloud unless you want it to.',
           ],
         },
       ],
@@ -99,8 +99,8 @@ export default {
       andMore: 'and more',
     },
     gallery: {
-      title: 'Built for the field',
-      subtitle: 'One solid block of anodized aluminum. Every port sealed. Ready for your rack, your machine, or your tank.',
+      title: 'Built for harsh plants',
+      subtitle: 'One solid block of anodized aluminum. Every port sealed. Ready for your rack, your machine, or your tank — in the harshest industrial environments.',
       figures: [
         {
           alt: 'Edge-Compute front plate with labelled ports next to the opened enclosure showing the compute module',
@@ -116,7 +116,7 @@ export default {
     },
     closer: {
       title: 'Bring compute to your measurements.',
-      text: 'Whether you are connecting a single sensor or instrumenting an entire plant: the skAInet Edge-Compute gives you a rugged, secure, and open platform that is already proven in the field. Tell us what you want to measure — we will tell you how to get there.',
+      text: 'Whether you are connecting a single sensor or instrumenting an entire plant: the skAInet Edge-Compute gives you a rugged, secure on-prem edge platform that is open and already proven in the field. Tell us what you want to measure — we will tell you how to get there.',
     },
   },
 

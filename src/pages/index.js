@@ -67,7 +67,7 @@ const productJsonLd = {
   name: 'skAInet Edge-Compute',
   alternateName: 'Edge-Compute v1.5',
   description:
-    'Programmable M12-PoE switch, router, and compute module for industrial edge applications. Rugged anodized aluminum enclosure, sealed M12 connectors, operation under water up to 1 bar, 7 PoE LAN ports plus WAN, 8-core ARM CPU, 8 GB RAM, 32 GB eMMC, Yocto Linux with documented SBOM.',
+    'Secure on-prem edge computing for harsh industrial plants: programmable M12-PoE switch, router, and compute module. Rugged IP67 anodized aluminum enclosure, sealed M12 connectors, operation under water up to 1 bar, 7 PoE LAN ports plus WAN, 8-core ARM CPU, 8 GB RAM, 32 GB eMMC, Yocto Linux with documented SBOM.',
   image: [
     'https://edge-compute.skainet.io/img/edge-in-use-2.jpg',
     'https://edge-compute.skainet.io/img/edge-branded.jpg',
