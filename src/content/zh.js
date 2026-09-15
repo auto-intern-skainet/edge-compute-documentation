@@ -19,6 +19,8 @@ export default {
     company: 'Auto-Intern GmbH',
     taglinePost: ' 出品。',
     specsLink: '技术规格 →',
+    datasheetLink: '下载数据手册（PDF）→',
+    datasheetHref: '/datasheets/skainet-edge-compute-v1.5-datasheet-zh.pdf',
     pricePre: '起售价 ',
     priceNet: '净价',
     requestQuote: '索取报价',

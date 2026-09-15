@@ -146,6 +146,9 @@ export default function Home() {
               <Link className="heroSecondaryLink" to="/docs/specifications">
                 {t.specsLink}
               </Link>
+              <a className="heroSecondaryLink" href={useBaseUrl(t.datasheetHref)} target="_blank" rel="noopener noreferrer">
+                {t.datasheetLink}
+              </a>
               <p className="heroPrice">
                 {t.pricePre}
                 <strong>260 €</strong> / <strong>$299</strong> {t.priceNet} ·{' '}

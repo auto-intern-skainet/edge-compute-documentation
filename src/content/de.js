@@ -20,6 +20,8 @@ export default {
     company: 'Auto-Intern GmbH',
     taglinePost: ', Deutschland.',
     specsLink: 'Technische Daten →',
+    datasheetLink: 'Datenblatt herunterladen (PDF) →',
+    datasheetHref: '/datasheets/skainet-edge-compute-v1.5-datenblatt-de.pdf',
     pricePre: 'Ab ',
     priceNet: 'netto',
     requestQuote: 'Angebot anfragen',

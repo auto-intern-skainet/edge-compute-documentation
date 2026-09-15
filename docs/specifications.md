@@ -55,3 +55,9 @@ submersion:
 
 For more information, contact
 [info@auto-intern.de](mailto:info@auto-intern.de).
+
+## Datasheets (PDF)
+
+- [Datasheet (English)](/datasheets/skainet-edge-compute-v1.5-datasheet-en.pdf)
+- [Datenblatt (Deutsch)](/datasheets/skainet-edge-compute-v1.5-datenblatt-de.pdf)
+- [数据手册（中文）](/datasheets/skainet-edge-compute-v1.5-datasheet-zh.pdf)
