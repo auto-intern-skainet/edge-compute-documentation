@@ -52,3 +52,9 @@ Schwächer dimensionierte Netzteile können funktionieren – jedoch auf eigenes
 
 Für weitere Informationen wenden Sie sich an
 [info@auto-intern.de](mailto:info@auto-intern.de).
+
+## Datenblätter (PDF)
+
+- [Datenblatt (Deutsch)](/datasheets/skainet-edge-compute-v1.5-datenblatt-de.pdf)
+- [Datasheet (English)](/datasheets/skainet-edge-compute-v1.5-datasheet-en.pdf)
+- [数据手册（中文）](/datasheets/skainet-edge-compute-v1.5-datasheet-zh.pdf)

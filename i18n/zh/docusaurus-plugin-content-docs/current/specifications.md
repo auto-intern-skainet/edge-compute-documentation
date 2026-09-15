@@ -51,3 +51,9 @@ title: 技术规格
 
 如需了解更多信息，请联系
 [info@auto-intern.de](mailto:info@auto-intern.de)。
+
+## 数据手册（PDF）
+
+- [数据手册（中文）](/datasheets/skainet-edge-compute-v1.5-datasheet-zh.pdf)
+- [Datasheet (English)](/datasheets/skainet-edge-compute-v1.5-datasheet-en.pdf)
+- [Datenblatt (Deutsch)](/datasheets/skainet-edge-compute-v1.5-datenblatt-de.pdf)
