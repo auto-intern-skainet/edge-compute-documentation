@@ -20,6 +20,8 @@ export default {
     company: 'Auto-Intern GmbH',
     taglinePost: ', Germany.',
     specsLink: 'Technical specifications →',
+    datasheetLink: 'Download datasheet (PDF) →',
+    datasheetHref: '/datasheets/skainet-edge-compute-v1.5-datasheet-en.pdf',
     pricePre: 'Starting from ',
     priceNet: 'net',
     requestQuote: 'request a quote',

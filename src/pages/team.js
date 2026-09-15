@@ -132,7 +132,7 @@ const team = [
     name: 'René Glitza',
     givenName: 'René',
     familyName: 'Glitza',
-    photo: null,
+    photo: '/img/team/rene.jpg',
     primary: {label: 'ResearchGate', href: 'https://www.researchgate.net/profile/Rene-Glitza'},
     description:
       'Analytics, machine learning, and AI for the skAInet Edge-Compute. Senior Engineer, Systems Design at Auto-Intern GmbH leading predictive-maintenance projects; researcher at the Institute of Communication Acoustics, Ruhr-Universität Bochum, on privacy-preserving federated learning, anomalous sound detection, and acoustic sensor networks; M.Sc. in electrical engineering and information technology (embedded systems); part of NexuFed AI.',
@@ -171,7 +171,7 @@ const team = [
     name: 'Philipp Lehmann',
     givenName: 'Philipp',
     familyName: 'Lehmann',
-    photo: null,
+    photo: '/img/team/philipp.jpg',
     primary: {label: 'GitHub', href: 'https://github.com/PhilippTheServer'},
     description:
       'Cyber security for the skAInet Edge-Compute at Auto-Intern GmbH / AI-Gruppe: hardened Yocto Linux image, software bill of materials (SBOM), Cyber Resilience Act alignment, and the segmented network architecture between LAN and WAN.',
