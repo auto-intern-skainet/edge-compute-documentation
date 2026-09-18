@@ -111,11 +111,17 @@ const team = [
     name: 'Tabea Bökelmann',
     givenName: 'Tabea',
     familyName: 'Bökelmann',
+    canonicalId: 'https://tabeatheunicorn.space/#person',
     photo: '/img/team/tabea.jpg',
-    primary: {label: 'LinkedIn', href: 'https://de.linkedin.com/in/tabea-r%C3%B6themeyer-0b9794198'},
+    primary: {label: 'tabeatheunicorn.space', href: 'https://tabeatheunicorn.space/'},
     description:
       'User interaction for the skAInet Edge-Compute. Physicist and computer scientist at Auto-Intern GmbH since 2017, Head of Software and of Data & Analytics; led the design and construction of the sensor hardware for the 25square street-level weather sensor network.',
-    links: [{label: 'Twitter / X', href: 'https://x.com/tabeatheunicorn'}],
+    links: [
+      {label: 'LinkedIn', href: 'https://www.linkedin.com/in/tabea-r%C3%B6themeyer-0b9794198'},
+      {label: 'GitHub', href: 'https://github.com/tabeatheunicorn'},
+      {label: 'ORCID', href: 'https://orcid.org/0009-0003-3853-3814'},
+      {label: 'Twitter / X', href: 'https://x.com/tabeatheunicorn'},
+    ],
     jsonLd: {
       additionalName: 'Viktoria',
       alternateName: ['Tabea Viktoria Bökelmann', 'Tabea Röthemeyer', 'Tabea Viktoria Röthemeyer'],
