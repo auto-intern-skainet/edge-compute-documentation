@@ -65,7 +65,7 @@ export default function Contact() {
               <h3>{t.sales.title}</h3>
               <p>
                 {t.sales.textPre}
-                <strong>260 €</strong> (<strong>$299</strong>){t.sales.textPost}
+                <strong>720 €</strong> (<strong>$830</strong>){t.sales.textPost}
               </p>
               <div className="heroButtons" style={{justifyContent: 'flex-start'}}>
                 <Link className="button button--primary button--lg" href="mailto:info@auto-intern.de?subject=skAInet%20Edge-Compute%20quote">

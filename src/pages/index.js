@@ -92,18 +92,18 @@ const productJsonLd = {
   offers: [
     {
       '@type': 'Offer',
-      price: '260',
+      price: '720',
       priceCurrency: 'EUR',
-      priceSpecification: {'@type': 'PriceSpecification', price: '260', priceCurrency: 'EUR', minPrice: '260', valueAddedTaxIncluded: false},
+      priceSpecification: {'@type': 'PriceSpecification', price: '720', priceCurrency: 'EUR', minPrice: '720', valueAddedTaxIncluded: false},
       availability: 'https://schema.org/InStock',
       url: 'https://edge-compute.skainet.io/contact',
       seller: {'@id': 'https://www.auto-intern.de/#organization'},
     },
     {
       '@type': 'Offer',
-      price: '299',
+      price: '830',
       priceCurrency: 'USD',
-      priceSpecification: {'@type': 'PriceSpecification', price: '299', priceCurrency: 'USD', minPrice: '299', valueAddedTaxIncluded: false},
+      priceSpecification: {'@type': 'PriceSpecification', price: '830', priceCurrency: 'USD', minPrice: '830', valueAddedTaxIncluded: false},
       availability: 'https://schema.org/InStock',
       url: 'https://edge-compute.skainet.io/contact',
       seller: {'@id': 'https://www.auto-intern.de/#organization'},
@@ -151,7 +151,7 @@ export default function Home() {
               </a>
               <p className="heroPrice">
                 {t.pricePre}
-                <strong>260 €</strong> / <strong>$299</strong> {t.priceNet} ·{' '}
+                <strong>720 €</strong> / <strong>$830</strong> {t.priceNet} ·{' '}
                 <a href="mailto:info@auto-intern.de?subject=skAInet%20Edge-Compute%20quote">{t.requestQuote}</a>
               </p>
             </div>

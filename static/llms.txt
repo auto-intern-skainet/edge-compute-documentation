@@ -15,7 +15,7 @@ Key facts:
 - Upstream APIs: REST, WebSocket, Webhooks, MQTT, OPC UA, Modbus-TCP, EPICS, gRPC, AMQP, CoAP, SNMP, Prometheus, InfluxDB, SFTP/rsync
 - Security model: on-premises by design — data is filtered and analyzed on the edge; no raw data reaches the upstream network or any cloud unless configured
 - Power: recommended ≥ 100 W PSU; minimum 25 W without PoE loads
-- Price: starting from 260 EUR / 299 USD (net) — quotes via info@auto-intern.de
+- Price: starting from 720 EUR / 830 USD (net) — quotes via info@auto-intern.de
 - Tech stack: KiCad, build123d, HLH Prototypes (enclosures), GH Electronics (M12 PoE cables), NextPCB (PCBA); Yocto Linux, NetBird (optional remote access), Redis, Docker, Crow (C++ APIs), Angular; optional external Ceph, Kubernetes, Ollama; EPICS and Modbus TCP integration
 - Machine-readable full text of every page: https://edge-compute.skainet.io/llms-full.txt — sitemap: https://edge-compute.skainet.io/sitemap.xml
 
